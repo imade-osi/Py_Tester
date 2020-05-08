@@ -371,7 +371,7 @@ import copy
 #             if str2_arr[inx] not in str1:
 #                 count+=1
 
-    return count
+    # return count
 
 
 #     pivot_index = len(items) - 1
