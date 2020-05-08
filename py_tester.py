@@ -332,21 +332,21 @@ import copy
 
 # print(b_search([1,2,3,5,8,9], 0))
 
-def quick_sort(my_list):
-    if len(my_list) <= 1:
-        return my_list
+# def quick_sort(my_list):
+#     if len(my_list) <= 1:
+#         return my_list
 
-    pivot_index = quick_work(my_list)
+#     pivot_index = quick_work(my_list)
 
-    left = my_list[:pivot_index]
-    right = my_list[pivot_index:]
+#     left = my_list[:pivot_index]
+#     right = my_list[pivot_index:]
 
-    quick_sort(left)
-    quick_sort(right)
+#     quick_sort(left)
+#     quick_sort(right)
 
-    return my_list
+#     return my_list
 
-def quick_work(items):
+# def quick_work(items):
     # pntr1 = 0
     # pntr2 = len(my_list) - 1
 
