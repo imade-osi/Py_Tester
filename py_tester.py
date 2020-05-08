@@ -1,4 +1,4 @@
-import copy
+# import copy
 # Returns true if there is a path from  
 # root to the given node. It also  
 # populates 'arr' with the given path  
