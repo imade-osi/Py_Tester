@@ -360,12 +360,12 @@ import copy
     #             pntr2 -= 1
             
     # return def deletion_distance(str1, str2):
-    count = 0
+    # count = 0
 
-    if len(str1) > len(str2):
-        for inx, char in enumerate(str1):
-            if str1_arr[inx] not in str2:
-                count += 1
+    # if len(str1) > len(str2):
+    #     for inx, char in enumerate(str1):
+    #         if str1_arr[inx] not in str2:
+    #             count += 1
 #     else:
 #         for inx, char in enumerate(str2):
 #             if str2_arr[inx] not in str1:
