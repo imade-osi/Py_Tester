@@ -414,9 +414,9 @@
             #     if a + 3*b > target: break
             #     for k in range(j+1, L-1):
             #         c = nums[k]
-                    d = target-(a+b+c)
-                    if d > M: continue
-                    if d < c: break
-                    if d in dic and dic[d] > k:
-                        Set.add((a,b,c,d))
-        return Set
+        #             d = target-(a+b+c)
+        #             if d > M: continue
+        #             if d < c: break
+        #             if d in dic and dic[d] > k:
+        #                 Set.add((a,b,c,d))
+        # return Set
