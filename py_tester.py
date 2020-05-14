@@ -399,3 +399,24 @@
 
 # print(quick_sort([5,4,9,15,0,4,2,9]))
 
+# class Solution:
+#     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+#         if not nums: return []
+#         nums.sort()
+#         L, dic, Set, M = len(nums), {j:i for i, j in enumerate(nums)}, set(), nums[-1]
+#         for i in range(L-3):
+#             a = nums[i]
+            if a + 3*M < target: continue
+            if 4*a > target: break
+            for j in range(i+1, L-2):
+                b = nums[j]
+                if a + b +2*M < target: continue
+                if a + 3*b > target: break
+                for k in range(j+1, L-1):
+                    c = nums[k]
+                    d = target-(a+b+c)
+                    if d > M: continue
+                    if d < c: break
+                    if d in dic and dic[d] > k:
+                        Set.add((a,b,c,d))
+        return Set
