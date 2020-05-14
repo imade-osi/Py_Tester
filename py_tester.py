@@ -462,25 +462,25 @@
 #     return islands
 
 
-function markIsland(binaryMatrix, rows, cols, i, j):
-    q = new Queue()
-    q.push([i,j])
-    while (!q.isEmpty()):
-        item = q.pop()
-        x = item[0]
-        y = item[1]
-        if (binaryMatrix[x][y] == 1):
-            binaryMatrix[x][y] = -1
-            pushIfValid(q, rows, cols, x-1, y)
-            pushIfValid(q, rows, cols, x, y-1)
-            pushIfValid(q, rows, cols, x+1, y)
-            pushIfValid(q, rows, cols, x, y+1)
+# function markIsland(binaryMatrix, rows, cols, i, j):
+#     q = new Queue()
+#     q.push([i,j])
+#     while (!q.isEmpty()):
+#         item = q.pop()
+#         x = item[0]
+#         y = item[1]
+#         if (binaryMatrix[x][y] == 1):
+#             binaryMatrix[x][y] = -1
+#             pushIfValid(q, rows, cols, x-1, y)
+#             pushIfValid(q, rows, cols, x, y-1)
+#             pushIfValid(q, rows, cols, x+1, y)
+#             pushIfValid(q, rows, cols, x, y+1)
 
 
-function pushIfValid(q, rows, cols, x, y):
-    if (x >= 0 AND x < rows AND y >= 0 AND y < cols):
-        q.push([x,y])
+# function pushIfValid(q, rows, cols, x, y):
+#     if (x >= 0 AND x < rows AND y >= 0 AND y < cols):
+#         q.push([x,y])
 
-Time Complexity: let N and M be the numbers of columns and rows in binaryMatrix, respectively. Each cell in binaryMatrix is visited a constant number of times. Once during the iteration and up to 4 times during an island expansion. Therefore, the time complexity is linear in the size of the input, i.e. O(N⋅M).
+# Time Complexity: let N and M be the numbers of columns and rows in binaryMatrix, respectively. Each cell in binaryMatrix is visited a constant number of times. Once during the iteration and up to 4 times during an island expansion. Therefore, the time complexity is linear in the size of the input, i.e. O(N⋅M).
 
-Space Complexity: since we are allocating a queue in the algorithm, the space complexity is linear O(N⋅M). For instance, consider a matrix that is all 1s.
+# Space Complexity: since we are allocating a queue in the algorithm, the space complexity is linear O(N⋅M). For instance, consider a matrix that is all 1s.
