@@ -138,7 +138,7 @@
 #        input(str): input to be checked if it is palindrome
 #     """
     
-#     # TODO: Write your recursive palindrome checker here
+# Todo: Write your recursive palindrome checker here
 #     if len(input) == 0:
 #         return True
 #     elif len(input) == 1:
