@@ -420,3 +420,22 @@
         #             if d in dic and dic[d] > k:
         #                 Set.add((a,b,c,d))
         # return Set
+
+#         def find_duplicates(arr1, arr2):
+#   #arr1_hash = {}
+#   solutions_arr = []
+#   arr1_pnt = 0
+#   arr2_pnt = 0
+  
+#   while arr1_pnt < len(arr1) and arr2_pnt < len(arr2):
+#     if arr1[arr1_pnt] < arr2[arr2_pnt]:
+#         arr1_pnt += 1
+#     elif arr2[arr2_pnt] < arr1[arr1_pnt]:
+#         arr2_pnt += 1
+#     else:
+#         solutions_arr.append(arr1[arr1_pnt])
+#         arr1_pnt += 1
+#         arr2_pnt += 1
+        
+#   return solutions_arr
+
