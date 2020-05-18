@@ -138,39 +138,39 @@ print(spiral_copy(inputMatrix))
 
 
 
-def flip(arr, k):
+# def flip(arr, k):
   
-  new_arr = []
-  inx = k 
+#   new_arr = []
+#   inx = k 
   
-  while inx >= 0:
-    new_arr.append(arr[inx])
-    inx -= 1 
+#   while inx >= 0:
+#     new_arr.append(arr[inx])
+#     inx -= 1 
     
-  arr[:k+1] = new_arr
+#   arr[:k+1] = new_arr
     
   
 
-def pancake_sort(arr):
+# def pancake_sort(arr):
   
-  inx = len(arr) - 1 
+#   inx = len(arr) - 1 
   
   
-  while inx >= 0:
-    max_num = 0
-    max_inx = 0
+#   while inx >= 0:
+#     max_num = 0
+#     max_inx = 0
     
-    for inx, ele in enumerate(arr[:inx + 1]):
-      if ele > max_num: # mark
-          max_num = ele
-          max_inx = inx
+#     for inx, ele in enumerate(arr[:inx + 1]):
+#       if ele > max_num: # mark
+#           max_num = ele
+#           max_inx = inx
           
-    flip(arr, max_inx)
-    flip(arr, inx)
+#     flip(arr, max_inx)
+#     flip(arr, inx)
     
-    inx -= 1
+#     inx -= 1
     
-  return arr
+#   return arr
     
     
     
