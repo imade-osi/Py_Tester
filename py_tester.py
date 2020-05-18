@@ -583,3 +583,57 @@
 # Space Complexity: O(1), since we only need a constant number of variables for the algorithm.
 
 # Mathematical Note: our explanation used the fact that power function x^n is a monotonically increasing continuous function on the positive numbers. Although it is true, the Intermediate value theorem in calculus, states that this method will work for every continuous function - but the proof for this requires more mathematical tools.
+'''
+brute force
+  sort on the whole array
+  quick sort
+  runtime O(n log n)
+  space O(1)
+  
+solution1 
+  [1, 4, 5, 2, 3, 7, 8, 6, 10, 9]
+      i 
+                  j
+  k=2
+  sliding window 2k + 1 
+  runtime n k log k
+  
+solution 2
+  use heap 
+  time: n log k
+  space: n
+
+create a heap with first 2k + 1 elements
+iterate from 2k + 1 end of array
+  pop from heap
+  put cur element onto heap
+  
+if we are at the end of array
+  keep poping from heap until empty
+
+'''
+
+# from queue import PriorityQueue
+#https://towardsdatascience.com/introduction-to-priority-queues-in-python-83664d3178c3
+  
+import heapq
+
+def sort_k_messed_array(arr, k):
+  q = []
+  
+  result = []
+  for num in arr:
+    heapq.heappush(q, num)
+    if len(q) > 2 * k + 1:
+      result.append(heapq.heappop(q))
+  while q:
+    result.append(heapq.heappop(q))
+  return result  
+  
+arr = [1, 4, 5, 2, 3, 7, 8, 6, 10, 9]
+k = 2
+heap_size = 5
+heap = []
+#result = [1 2 3 4 5 6 7 8 9 10]
+
+print(sort_k_messed_array(arr, k))
