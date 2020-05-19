@@ -203,16 +203,16 @@ print(spiral_copy(inputMatrix))
 # 84     [84, 24, 56, 42]
 # '''
 
-def array_of_array_products(arr):
-  if len(arr) <= 1:
-    return []
-  left_prod = right_prod = 1
-  res = [1 for _ in range(len(arr))]
-  #[1, 1, 1]
-  # iterate from left to right
-  for i in range(len(arr)):
-    res[i] *= left_prod
-    # [1, 8, 80]
+# def array_of_array_products(arr):
+#   if len(arr) <= 1:
+#     return []
+#   left_prod = right_prod = 1
+#   res = [1 for _ in range(len(arr))]
+#   #[1, 1, 1]
+#   # iterate from left to right
+#   for i in range(len(arr)):
+#     res[i] *= left_prod
+#     # [1, 8, 80]
     left_prod *= arr[i]
     # 160
   # from right to left
