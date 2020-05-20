@@ -208,7 +208,7 @@ print(spiral_copy(inputMatrix))
 #     return []
 #   left_prod = right_prod = 1
 #   res = [1 for _ in range(len(arr))]
-#   #[1, 1, 1]
+#   #[1,1,1]
 #   # iterate from left to right
 #   for i in range(len(arr)):
 #     res[i] *= left_prod
