@@ -613,22 +613,22 @@ if we are at the end of array
 
 '''
 
-# from queue import PriorityQueue
-#https://towardsdatascience.com/introduction-to-priority-queues-in-python-83664d3178c3
+from queue import PriorityQueue
+https://towardsdatascience.com/introduction-to-priority-queues-in-python-83664d3178c3
   
-# import heapq
+import heapq
 
-# def sort_k_messed_array(arr, k):
-#   q = []
+def sort_k_messed_array(arr, k):
+  q = []
   
-#   result = []
-#   for num in arr:
-#     heapq.heappush(q, num)
-#     if len(q) > 2 * k + 1:
-#       result.append(heapq.heappop(q))
-#   while q:
-#     result.append(heapq.heappop(q))
-#   return result  
+  result = []
+  for num in arr:
+    heapq.heappush(q, num)
+    if len(q) > 2 * k + 1:
+      result.append(heapq.heappop(q))
+  while q:
+    result.append(heapq.heappop(q))
+  return result  
   
 
 # arr = [1, 4, 5, 2, 3, 7, 8, 6, 10, 9]
