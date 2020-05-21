@@ -626,9 +626,9 @@ if we are at the end of array
 #     heapq.heappush(q, num)
 #     if len(q) > 2 * k + 1:
 #       result.append(heapq.heappop(q))
-  while q:
-    result.append(heapq.heappop(q))
-  return result  
+  # while q:
+  #   result.append(heapq.heappop(q))
+  # return result  
   
 
 # arr = [1, 4, 5, 2, 3, 7, 8, 6, 10, 9]
