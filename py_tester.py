@@ -31,8 +31,7 @@
 #     return False
   
 # # function to print the path from root to  
-# # the given node if the node lies in 
-# # the binary tree  
+# # the given node if the node lies in the binary tree  
 # def printPath(root, x): 
       
 #     # vector to store the path  
@@ -484,8 +483,6 @@
 # Time Complexity: let N and M be the numbers of columns and rows in binaryMatrix, respectively. Each cell in binaryMatrix is visited a constant number of times. Once during the iteration and up to 4 times during an island expansion. Therefore, the time complexity is linear in the size of the input, i.e. O(N⋅M).
 
 # Space Complexity: since we are allocating a queue in the algorithm, the space complexity is linear O(N⋅M). For instance, consider a matrix that is all 1s.
-
-
 
 # Array Quadruplet
 # The naive solution would be to consider every quadruplet in the input array and return the one (if exists) whose sum is s. This approach requires using 4 nested loops and its time complexity is O(N^4). This is quite inefficient and we can do better than that.
