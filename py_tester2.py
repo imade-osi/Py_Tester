@@ -81,12 +81,12 @@ def spiral_copy(inputMatrix):
 #     row -= 1
 #   return (row, col)
 
-def find_next_valid_pos(grid, nrows, ncols, visited, direction, row, col):
-  next_row, next_col = find_next_pos(direction, row, col)
-  if not is_within_bounds(nrows, ncols, next_row, next_col) or (next_row, next_col) in visited:
-    direction = (direction + 1) % 4
-    next_row, next_col = find_next_pos(direction, row, col)    
-  return (direction, next_row, next_col)
+# def find_next_valid_pos(grid, nrows, ncols, visited, direction, row, col):
+#   next_row, next_col = find_next_pos(direction, row, col)
+#   if not is_within_bounds(nrows, ncols, next_row, next_col) or (next_row, next_col) in visited:
+#     direction = (direction + 1) % 4
+#     next_row, next_col = find_next_pos(direction, row, col)    
+#   return (direction, next_row, next_col)
 
 def spiral_copy(inputMatrix):
   nrows = len(inputMatrix)
