@@ -45,24 +45,24 @@ def spiral_copy(inputMatrix):
 #going up
 
 
-def s_flatten(arr):
+# def s_flatten(arr):
  
-  return_arr = []
+#   return_arr = []
   
   
-  while len(return_arr) < len(arr):
+#   while len(return_arr) < len(arr):
     
-    for inx, row in enumerate(arr): #right
+#     for inx, row in enumerate(arr): #right
       
-    for inx, col in enumerate(row):
+#     for inx, col in enumerate(row):
 
-    for inx, col in enumerate(row):
+#     for inx, col in enumerate(row):
 
-    for inx, col in enumerate(row):
-      return_arr.append(col)
+#     for inx, col in enumerate(row):
+#       return_arr.append(col)
       
       
-    return return_arr
+#     return return_arr
         
 
 
