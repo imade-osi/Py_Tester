@@ -67,19 +67,19 @@ def spiral_copy(inputMatrix):
 
 
 
-def is_within_bounds(nrows, ncols, row, col):
-   return row >= 0 and row < nrows and col >= 0 and col < ncols
+# def is_within_bounds(nrows, ncols, row, col):
+#    return row >= 0 and row < nrows and col >= 0 and col < ncols
 
-def find_next_pos(direction, row, col):
-  if direction == 0:
-    col += 1
-  elif direction == 1:
-    row += 1
-  elif direction == 2:
-    col -= 1
-  elif direction == 3:
-    row -= 1
-  return (row, col)
+# def find_next_pos(direction, row, col):
+#   if direction == 0:
+#     col += 1
+#   elif direction == 1:
+#     row += 1
+#   elif direction == 2:
+#     col -= 1
+#   elif direction == 3:
+#     row -= 1
+#   return (row, col)
 
 def find_next_valid_pos(grid, nrows, ncols, visited, direction, row, col):
   next_row, next_col = find_next_pos(direction, row, col)
