@@ -88,26 +88,26 @@ def spiral_copy(inputMatrix):
 #     next_row, next_col = find_next_pos(direction, row, col)    
 #   return (direction, next_row, next_col)
 
-def spiral_copy(inputMatrix):
-  nrows = len(inputMatrix)
-  ncols = len(inputMatrix[0])
-  direction = 0
-  row = 0
-  col = 0
-  visited = set()
-  result = []
-  while (len(result) < nrows * ncols):
-    result.append(inputMatrix[row][col])
-    visited.add((row, col))
-    direction, row, col = find_next_valid_pos(inputMatrix, nrows, ncols, visited, direction, row, col)
-  return result
+# def spiral_copy(inputMatrix):
+#   nrows = len(inputMatrix)
+#   ncols = len(inputMatrix[0])
+#   direction = 0
+#   row = 0
+#   col = 0
+#   visited = set()
+#   result = []
+#   while (len(result) < nrows * ncols):
+#     result.append(inputMatrix[row][col])
+#     visited.add((row, col))
+#     direction, row, col = find_next_valid_pos(inputMatrix, nrows, ncols, visited, direction, row, col)
+#   return result
   
-inputMatrix  = [ [1,    2,   3,  4,    5],
-                         [6,    7,   8,  9,   10],
-                         [11,  12,  13,  14,  15],
-                         [16,  17,  18,  19,  20] ]
+# inputMatrix  = [ [1,    2,   3,  4,    5],
+#                          [6,    7,   8,  9,   10],
+#                          [11,  12,  13,  14,  15],
+#                          [16,  17,  18,  19,  20] ]
 
-print(spiral_copy(inputMatrix))
+# print(spiral_copy(inputMatrix))
 
 
 
