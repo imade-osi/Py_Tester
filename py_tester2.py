@@ -11,19 +11,19 @@ def spiral_copy(inputMatrix):
 #return that return array
 
 
-~~~~~~~spiral logic~~~~~~~~~~~~~
+# ~~~~~~~spiral logic~~~~~~~~~~~~~
 
-i = 0
+# i = 0
 
-~~~~~~~~~~~~going right ==> ~~~~~~~~~
-start at first row (2d_array[i])
+# ~~~~~~~~~~~~going right ==> ~~~~~~~~~
+# start at first row (2d_array[i])
 
-iterate through first row 
-going right ==>   #also have visited logic to make sure i dont renter cord (cl)
-len(2d_array[0]) - 1 until 0
-(2d_array)
+# iterate through first row 
+# going right ==>   #also have visited logic to make sure i dont renter cord (cl)
+# len(2d_array[0]) - 1 until 0
+# (2d_array)
 
-~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~
 
 
 #~~~~~~~~~~~~~going down ~~~~~~~~~~~~~~
