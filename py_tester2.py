@@ -213,15 +213,15 @@ def spiral_copy(inputMatrix):
 #   for i in range(len(arr)):
 #     res[i] *= left_prod
 #     # [1, 8, 80]
-    left_prod *= arr[i]
-    # 160
-  # from right to left
-  for j in range(len(arr) - 1, -1, -1):
-    res[j] *= right_prod
-    # [20, 16, 80]
-    right_prod *= arr[j]
-    # 160
-  return res
+  #   left_prod *= arr[i]
+  #   # 160
+  # # from right to left
+  # for j in range(len(arr) - 1, -1, -1):
+  #   res[j] *= right_prod
+  #   # [20, 16, 80]
+  #   right_prod *= arr[j]
+  #   # 160
+  # return res
 
 #print(array_of_array_products([1]) 
 
