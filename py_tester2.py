@@ -151,22 +151,22 @@ def spiral_copy(inputMatrix):
     
   
 
-# def pancake_sort(arr):
+def pancake_sort(arr):
   
-#   inx = len(arr) - 1 
+  inx = len(arr) - 1 
   
   
-#   while inx >= 0:
-#     max_num = 0
-#     max_inx = 0
+  while inx >= 0:
+    max_num = 0
+    max_inx = 0
     
-#     for inx, ele in enumerate(arr[:inx + 1]):
-#       if ele > max_num: # mark
-#           max_num = ele
-#           max_inx = inx
+    for inx, ele in enumerate(arr[:inx + 1]):
+      if ele > max_num: # mark
+          max_num = ele
+          max_inx = inx
           
-#     flip(arr, max_inx)
-#     flip(arr, inx)
+    flip(arr, max_inx)
+    flip(arr, inx)
     
 #     inx -= 1
     
