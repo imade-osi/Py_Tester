@@ -168,9 +168,9 @@ def pancake_sort(arr):
     flip(arr, max_inx)
     flip(arr, inx)
     
-#     inx -= 1
+    inx -= 1
     
-#   return arr
+  return arr
     
 #     '''
 # 8  10  2
