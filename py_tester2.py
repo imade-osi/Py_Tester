@@ -1,5 +1,5 @@
-def spiral_copy(inputMatrix):
-  pass # your code goes here
+# def spiral_copy(inputMatrix):
+#   pass # your code goes here
 
 
 
