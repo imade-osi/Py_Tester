@@ -1,58 +1,58 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-# def generate_primes():
-#     prime_string = ''
-#     num = 2
+def generate_primes():
+    prime_string = ''
+    num = 2
     
-#     while len(prime_string) < 10005:
-#         for prime_divide in range(2, num):
-#             if (num % prime_divide) == 0:
-#                 break
-#         else:
-#             prime_string += str(num) 
-#         num += 1
+    while len(prime_string) < 10005:
+        for prime_divide in range(2, num):
+            if (num % prime_divide) == 0:
+                break
+        else:
+            prime_string += str(num) 
+        num += 1
 
-#     return prime_string
+    return prime_string
 
     
 
-# def solution(i):
+def solution(i):
     
-#     generated_prime_string = generate_primes()
-#     return generated_prime_string[i:i+5]
+    generated_prime_string = generate_primes()
+    return generated_prime_string[i:i+5]
 
 
-# print(solution(0))
+print(solution(0))
 
-# def genrate_prime_num_string():
-#     """ genrating prime number string by mathametical formula 
-#         execution time is around 2.5 to 2.8 sec for 0 to 25000
-#     """
-#     PRIME_NUMBER_STRING=''
-#     for num in range(2,25000):
-#         for i in range(2, num):
-#             if (num % i) == 0: # if true mean number is not prime
-#                 break
-#         else:
-#             # number is prime
-#             PRIME_NUMBER_STRING+=str(num)
+def genrate_prime_num_string():
+    """ genrating prime number string by mathametical formula 
+        execution time is around 2.5 to 2.8 sec for 0 to 25000
+    """
+    PRIME_NUMBER_STRING=''
+    for num in range(2,25000):
+        for i in range(2, num):
+            if (num % i) == 0: # if true mean number is not prime
+                break
+        else:
+            # number is prime
+            PRIME_NUMBER_STRING+=str(num)
 
-#     return PRIME_NUMBER_STRING
-# #calling genrate function and holding data in global 
-# #so function can be called multiple time with generating 
-# #prime string each time 
+    return PRIME_NUMBER_STRING
+#calling genrate function and holding data in global 
+#so function can be called multiple time with generating 
+#prime string each time 
 
 
 
-# def solution(i):
-#     """
-#     solution is standard function
-#     i is index in prime list
-#     so retuen will be index i to i+1
-#     """
-#     PRIME_NUMBER_STRING = genrate_prime_num_string()
-#     return PRIME_NUMBER_STRING[i:i+5]
+def solution(i):
+    """
+    solution is standard function
+    i is index in prime list
+    so retuen will be index i to i+1
+    """
+    PRIME_NUMBER_STRING = genrate_prime_num_string()
+    return PRIME_NUMBER_STRING[i:i+5]
 
-#print(solution(0))
+print(solution(0))
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -176,24 +176,55 @@ def solution(l):
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 2.2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-from collections import deque
  
+board_length = 8
+board = [None] * 64
+ 
+def move_tracker(moves, cell_from):
+    def select_value(old, new):
+        if old is None:
+            return (new, True)
+   
+        value = min(old, new)
+ 
+        return (value, value == new and new != old)
+ 
+    for move in moves:
+        board[move], updated = select_value(board[move], board[cell_from] + 1)
+ 
+        if updated:
+            new_moves = all_moves(move)
+            move_tracker(new_moves, move)
+ 
+ 
+def all_moves(src):
+    def is_valid_move(row, column):
+        return (row >= 0) and (row <= board_length - 1) and (column >= 0) and (column <= board_length - 1)
+ 
+    moves = [None] * board_length
+ 
+    row = src // board_length
+    column = src % board_length
+ 
+    moves[0] = src - 1 - 2 * board_length if is_valid_move(row - 2, column - 1) else None
+    moves[1] = src + 1 - 2 * board_length if is_valid_move(row - 2, column + 1) else None
+    moves[2] = src + 1 + 2 * board_length if is_valid_move(row + 2, column + 1) else None
+    moves[3] = src - 1 + 2 * board_length if is_valid_move(row + 2, column - 1) else None
+    moves[4] = src - 2 - 1 * board_length if is_valid_move(row - 1, column - 2) else None
+    moves[5] = src + 2 - 1 * board_length if is_valid_move(row - 1, column + 2) else None
+    moves[6] = src + 2 + 1 * board_length if is_valid_move(row + 1, column + 2) else None
+    moves[7] = src - 2 + 1 * board_length if is_valid_move(row + 1, column - 2) else None
+ 
+    return [move for move in moves if move is not None]
+ 
+
 def solution(src, dest):
-    OFFSETS = [17, -17, 15, -15, 10, -10, 6, -6]
-    q, visited = deque([(0, src)]), set([src])
-    min_moves = float('inf')
-    while q:
-        moves, curr = q.popleft()
-        if curr == dest:
-            return moves
-        for offset in OFFSETS:
-            next_sqr = curr + offset
-            if next_sqr not in visited and 0 <= next_sqr <= 63:
-                visited.add(next_sqr)
-                q.append((moves + 1, next_sqr))
-    return min_moves
+
+    moves = all_moves(src)
+    board[src] = 0
+    move_tracker(moves, src)
  
-assert solution(0, 1) == 3
-assert solution(19, 36) == 1
-assert solution(0, 32) == 2
-print("PASSED!")
+    return board[dest]
+ 
+#print(solution(0, 1))
+print(solution(0, 1))
