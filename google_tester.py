@@ -227,4 +227,4 @@ def solution(src, dest):
     return board[dest]
  
 #print(solution(0, 1))
-print(solution(0, 1))
+# print(solution(0, 1))
