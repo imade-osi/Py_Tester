@@ -224,7 +224,7 @@
 #   return res
 
 # print(array_of_array_products([1]) 
-# print(array_of_array_products([2]) 
+
 
     
 
