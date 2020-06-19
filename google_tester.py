@@ -295,10 +295,7 @@ def answer(n):
 # assert answer(7) == 4
 # assert answer(10) == 4
 # assert answer(1024) == 10
-# assert answer(1025) == 11
-# assert answer(1026) == 12
-# assert answer(1027) == 13
-# assert answer(768) == 256 + 9
+
 
 # def solution(n):
 #     count = 0
