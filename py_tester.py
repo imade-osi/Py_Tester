@@ -628,8 +628,8 @@ def sort_k_messed_array(arr, k):
   return result  
 arr = [1, 4, 5, 2, 3, 7, 8, 6, 10, 9]
 k = 2
-# heap_size = 5
-# heap = []
+heap_size = 5
+heap = []
 #result = [1 2 3 4 5 6 7 8 9 10]
 # print(sort_k_messed_array(arr, k))
 # print(sort_k_messed_array(arr, k))
