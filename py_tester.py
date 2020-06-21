@@ -631,7 +631,7 @@ k = 2
 heap_size = 5
 heap = []
 #result = [1 2 3 4 5 6 7 8 9 10]
-
+# print(sort_k_messed_array(arr, k))
 # print(sort_k_messed_array(arr, k))
 
 
