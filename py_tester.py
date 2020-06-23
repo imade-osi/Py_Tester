@@ -635,3 +635,6 @@ if we are at the end of array
 
 
 
+# data = {'A': 5}
+# arr = list(data.keys())
+# print(list(data.values())[0])
