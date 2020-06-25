@@ -634,6 +634,6 @@ if we are at the end of array
 # print(sort_k_messed_array(arr, k))
 
 
-data = {'A': 5}
-arr = list(data.keys())
-print(list(data.values())[0])
+# data = {'A': 5}
+# arr = list(data.keys())
+# print(list(data.values())[0])
