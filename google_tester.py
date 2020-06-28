@@ -260,12 +260,12 @@
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 3.3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def factor_hash():
-    twofacts = {}
+    two facts = {}
     base = 2
     while len(str(base)) <= 309:
         twofacts[base] = True
         base = base * 2
-    return twofacts
+    return two facts
 
 
 def answer(n):
