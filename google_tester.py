@@ -263,7 +263,7 @@ def factor_hash():
     two facts = {}
     base = 2
     while len(str(base)) <= 309:
-        twofacts[base] = True
+        twofacts[base] = False
         base = base * 2
     return two facts
 
