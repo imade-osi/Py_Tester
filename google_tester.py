@@ -260,7 +260,7 @@
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 3.3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def factor_hash():
-    two facts = []
+    two facts = {}
     base = 2
     while len(str(base)) <= 309:
         twofacts[base] = True
