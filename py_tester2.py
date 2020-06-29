@@ -8,7 +8,7 @@
 #collect ints in order to return array
 #iterate to next spiral cordinate
 #collect element until end of spiral into return array
-#return that return array
+#the return the return array
 
 
 # ~~~~~~~spiral logic~~~~~~~~~~~~~
