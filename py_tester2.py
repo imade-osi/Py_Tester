@@ -11,7 +11,7 @@
 
 # ~~~~~~~spiral logic~~~~~~~~~~~
 
-# i = 0
+# i = 1
 
 # ~~~~~~~~~~~~going right ==> ~~~~~~~~~
 # start at first row (2d_array[i])
