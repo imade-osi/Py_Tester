@@ -1,15 +1,12 @@
 # def spiral_copy(inputMatrix):
 #   pass # your code goes here
 
-
-
 #naive solution
 #iterate through 2d array 
 #collect ints in order to return array
 #iterate to next spiral cordinate
 #collect element until end of spiral into return array
 #the return the return array
-
 
 # ~~~~~~~spiral logic~~~~~~~~~~~~~
 
