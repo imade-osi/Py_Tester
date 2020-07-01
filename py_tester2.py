@@ -11,7 +11,7 @@
 
 # ~~~~~~~spiral logic~~~~~~~~~~~
 
-# i = 1
+# i = 0
 
 # ~~~~~~~~~~~~going right ==> ~~~~~~~~~
 # start at first row (2d_array[i])
@@ -146,8 +146,6 @@
     
 #   arr[:k+1] = new_arr
     
-  
-
 # def pancake_sort(arr):
   
 #   inx = len(arr) - 1 
@@ -223,7 +221,7 @@
 
 # print(array_of_array_products([3]) 
 # print(array_of_array_products([2]) 
-# print(array_of_array_products([1]) 
+
 
     
 
