@@ -75,7 +75,7 @@
 #   elif direction == 2:
 #     col -= 1
 #   elif direction == 3:
-#     row -= 1
+#     row -= 2
 #   return (row, col)
 
 # def find_next_valid_pos(grid, nrows, ncols, visited, direction, row, col):
