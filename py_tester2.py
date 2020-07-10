@@ -212,7 +212,7 @@
 
 
 # print(array_of_array_products([3]) 
-# print(array_of_array_products([2]) 
+
 
     
 
