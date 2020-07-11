@@ -293,7 +293,7 @@ def answer(n):
 # assert answer(2) == 1
 # assert answer(6) == 3
 # assert answer(7) == 4
-
+# assert answer(7) == 5
 
 
 # def solution(n):

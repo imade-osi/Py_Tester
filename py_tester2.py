@@ -60,9 +60,6 @@
       
       
 #     return return_arr
-        
-
-
 
 # def is_within_bounds(nrows, ncols, row, col):
 #    return row >= 0 and row < nrows and col >= 0 and col < ncols
