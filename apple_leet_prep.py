@@ -9,7 +9,7 @@ class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
 
        # # 1 -> 2 -> 3 -> 4 -> 5
-       #              ^
+       #   ^
        # # 1 <- 2 <- 3 <- 4 <- 5
 
         prev = None
