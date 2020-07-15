@@ -181,7 +181,7 @@ def canPermutePalindrome(s):
     return True
 
 
-print(canPermutePalindrome("aabbcq"))
+# print(canPermutePalindrome("aabbcq"))
 
 
 # public class Solution {
@@ -195,3 +195,61 @@ print(canPermutePalindrome("aabbcq"))
 #             res = Math.max(res, map.get(key) + map.get(key + 1));}
 #         return res; }
 # }
+
+import bisect 
+
+def binary_search(a, x):  # can't use a to specify default for hi
+    # hi = hi if hi is not None else len(a)  # hi defaults to len(a) 
+    
+    left = bisect.bisect_left(a, x)  # find insertion position
+    right = bisect.bisect_right(a, x)
+
+    if left >= len(a):
+        return [-1, -1]
+    return [left, right -1] if a[left] == x else [-1, -1]  # don't walk off the end
+
+
+print(binary_search([2,2], 2))
+
+
+#perimeter of islands
+
+# class Solution:
+#     def islandPerimeter(self, grid: List[List[int]]) -> int:
+#         rows = len(grid)
+#         cols = len(grid[0])
+
+#         result = 0
+
+#         for r in range(rows):
+#             for c in range(cols):
+#                 if grid[r][c] == 1:
+#                     result += 4
+
+#                     if r > 0 and grid[r-1][c] == 1:
+#                         result -= 2
+
+#                     if c > 0 and grid[r][c-1] == 1:
+#                         result -= 2
+
+#         return result
+
+
+
+# max area of islands
+
+# class Solution(object):
+#     def maxAreaOfIsland(self, grid):
+#         seen = set()
+
+#         def area(r, c):
+#             if not (0 <= r < len(grid) and 0 <= c < len(grid[0])
+#                     and (r, c) not in seen and grid[r][c]):
+#                 return 0
+#             seen.add((r, c))
+#             return (1 + area(r+1, c) + area(r-1, c) +
+#                     area(r, c-1) + area(r, c+1))
+
+#         return max(area(r, c)
+#                    for r in range(len(grid))
+#                    for c in range(len(grid[0])))
