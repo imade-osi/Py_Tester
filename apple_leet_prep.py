@@ -237,7 +237,7 @@ print(binary_search([2,2], 4))
 
 
 
-# max area of islands
+max area of islands
 
 # class Solution(object):
 #     def maxAreaOfIsland(self, grid):
