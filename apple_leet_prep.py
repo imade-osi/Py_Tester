@@ -67,20 +67,20 @@ def recurse_prac(n):
 #     return fib(n-1) + fib(n-2)
 
 
-def linear_fib(n):
+# def linear_fib(n):
 
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
    
-    cache = [0,1]
+#     cache = [0,1]
 
-    for inx in range(2, n+1):
-        cache.append(cache[inx-1] + cache[inx-2])
+#     for inx in range(2, n+1):
+#         cache.append(cache[inx-1] + cache[inx-2])
 
 
-    return cache[n]
+#     return cache[n]
 
 # print(linear_fib(3))
 
