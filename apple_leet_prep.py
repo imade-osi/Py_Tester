@@ -210,6 +210,7 @@ def binary_search(a, x):  # can't use a to specify default for hi
 
 
 print(binary_search([2,2], 2))
+print(binary_search([2,2], 4))
 
 
 #perimeter of islands
