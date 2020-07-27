@@ -291,7 +291,7 @@ def answer(n):
 # assert answer(4) == 2
 # assert answer(3) == 2
 # assert answer(2) == 1
-# assert answer(6) == 3
+
 
 
 
