@@ -290,7 +290,7 @@ def answer(n):
 # assert answer(15) == 5
 # assert answer(4) == 2
 # assert answer(3) == 2
-
+# assert answer(3) == 5
 
 
 
