@@ -606,7 +606,7 @@ iterate from 2k + 1 end of array
   put cur element onto heap
   
 if we are at the end of array
-  keep poping from heap until empty
+  keep popping from heap until empty
 
 '''
 
