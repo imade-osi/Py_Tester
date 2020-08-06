@@ -296,7 +296,7 @@
 #     return my_hash.keys()
         
 
-# print(single_checker([3,4,5,5,3,4,1,2,2]))
+# print(single_checker([3,4,5,5,3,4,1,2,2,9]))
 
 # def single_checker(my_list):
 #     my_list.sort()
@@ -637,4 +637,4 @@ if we are at the end of array
 # data = {'A': 5}
 # arr = list(data.keys())
 # print(list(data.values())[0])
-# print(list(data.values())[1])
+
