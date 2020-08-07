@@ -296,7 +296,7 @@
 #     return my_hash.keys()
         
 
-# print(single_checker([3,4,5,5,3,4,1,2,2,9]))
+# print(single_checker([3,4,5,5,3,4,1,2,2]))
 
 # def single_checker(my_list):
 #     my_list.sort()
