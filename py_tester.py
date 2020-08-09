@@ -282,8 +282,8 @@
 # print(merge_sort([5,3,5,8,5,2,42,25,4,7779]))
 
 
-# input [3,4,5,5,3,4,1,2,2,4,9]
-# output [1,3]
+# input [3,4,5,5,3,4,1,2,2,4,9,10]
+# output [1]
 
 # def single_checker(my_list):
 #     my_hash = {}
