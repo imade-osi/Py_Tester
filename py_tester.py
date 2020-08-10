@@ -288,7 +288,7 @@
 # def single_checker(my_list):
 #     my_hash = {}
 
-#     for ele in my_list
+#     for ele in my_list:
 #         if ele in my_hash:
 #             my_hash.pop(ele)
 #         else:
@@ -296,7 +296,7 @@
 #     return my_hash.keys()
         
 
-# print(single_checker([3,4,5,5,3,4,1,2,2]))
+# print(single_checker([3,4,5,5,3,4,1,2]))
 
 # def single_checker(my_list):
 #     my_list.sort()
