@@ -286,7 +286,7 @@
 # output [1]
 
 # def single_checker(my_list):
-#     my_hash = {}
+#     my_hash_ = {}
 
 #     for ele in my_list:
 #         if ele in my_hash:
