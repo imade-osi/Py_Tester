@@ -329,7 +329,7 @@
 #         b_search(arr[mid:], target) 
 
 
-# print(b_search([1,2,3,5,8,9,4], 0))
+# print(b_search([1,2,3,5,8,9,4,0], 0))
 
 # def quick_sort(my_list):
 #     if len(my_list) <= 1:
