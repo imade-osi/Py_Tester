@@ -259,32 +259,32 @@
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ level 3.3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def factor_hash():
-    two facts = {}
-    base = 2
-    while len(str(base)) <= 309:
-        twofacts[base] = True
-        base = base * 2
-    return two facts
+# def factor_hash():
+#     two facts = {}
+#     base = 2
+#     while len(str(base)) <= 309:
+#         twofacts[base] = True
+#         base = base * 2
+#     return two facts
 
 
-def answer(n):
-    factors = factor_hash()
-    count = 0
-    n = int(n)
-    while n != 1:
-        if n-1 in factors:
-            n = n-1
-            count += 1
-        elif n+1 in factors:
-            n = n+1
-            count += 1
-        elif n % 2 != 0:
-            n = n+1
-            count += 1
-        n = n // 2
-        count += 1
-    return count
+# def answer(n):
+#     factors = factor_hash()
+#     count = 0
+#     n = int(n)
+#     while n != 1:
+#         if n-1 in factors:
+#             n = n-1
+#             count += 1
+#         elif n+1 in factors:
+#             n = n+1
+#             count += 1
+#         elif n % 2 != 0:
+#             n = n+1
+#             count += 1
+#         n = n // 2
+#         count += 1
+#     return count
 
 
 # assert answer(15) == 5
