@@ -419,7 +419,7 @@
 #   return cache[inx]
 
   
-print(decode_ways(""))
+#print(decode_ways(""))
 
                  #"1112"
   #           //        \\ 
