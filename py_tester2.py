@@ -444,18 +444,6 @@ print(decode_ways(""))
   # //   
   # AAAB 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # def decode_ways(str, inx):
 #   if inx == len(str):
 #     return 1
