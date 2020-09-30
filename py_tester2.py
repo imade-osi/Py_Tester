@@ -212,6 +212,277 @@
 # print(array_of_array_products([2]) 
 # print(array_of_array_products([1]) 
     
+# def fib(n):
+
+#     fib_arr = []
+
+#     if n <= 0:
+#         return 0
+#     elif n < 2: 
+#         return 1
+
+#     return fib(n-1) + fib(n-2)
+
+# def dynamicFib(num):
+
+#     fib[0] = 0
+#     fib[1] = 1
+
+#     # for i in range(2, num):
+#     #     fib[i] = fib[i-1] + fib[i-2]
+
+#     return fib[num]
+
+#     print(dynamicFib(0))
+
+
+# def minOp(str1, str2):
+#     str_count = 0
+
+#     if len(str1) < len(str2):
+#         for ele in str1:
+#             if ele in str2:
+#                 str_count +=1 
+#     else:
+#         for ele in str2:
+#             if ele in str1:
+#                 str_count +=1 
+
+#     return max(len(str1), len(str2)) - str_count
+
+# print(minOp('sundayy', 'sunday'))
+
+
+
+#   def minOp(str1, n, str2, m):
+
+#             if (m == 0):
+#                 return n
+
+#             if (n == 0):
+#                 return m
+
+#             if (str1[n-1] == str2[m-1]):
+#                 return minOp(str1, n -1, str2, m -1)
+
+#             return 1 + (min(minOp(str1, n, str2, m-1),  minOp(str1, n-1, str2, m), minOp(str1, n-1, str2, m-1)))
+
+#         return minOp(word1, len(word1), word2, len(word2))
+
+
+
+# def second_largest(arr):
+#     max_num = 0
+#     max_inx = None
+#     sec_max = 0
+
+#     for inx, ele in enumerate(arr):
+#         if ele > max_num:
+#             max_num = ele
+#             max_inx = inx
+
+#     for inx, ele in enumerate(arr):
+#         if ele > sec_max and ele <= max_num and inx!= max_inx:
+#             sec_max = ele
+    
+#     return sec_max
+
+# print(second_largest([2,3,4,4 ]))
+
+
+
+
+# Problem Statement #
+# Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+#
+# Write a function to return the indices of the two numbers (i.e. the pair) such that they add up to the given target.
+#
+# Example 1:
+#
+# Input: [1, 2, 3, 4, 6], target=6
+# Output: [1, 3]
+# Explanation: The numbers at index 1 and 3 add up to 6: 2+4=6
+# Example 2:
+#
+# Input: [2, 5, 9, 11], target=11
+# Output: [0, 2]
+# Explanation: The numbers at index 0 and
+
+# def num_decodings(str)
+#   result = []
+#   cur = []
+#   _num_decodings(cur, str, result)
+#   result.count
+# end
+
+# def _num_decodings(cur, rem, result)
+#   if rem.nil? || rem.empty?
+#     result << cur
+#     return
+#   end
+
+#   unless rem[0] == "0" || rem[1] == "0"
+#     cur_1 = cur.clone
+#     cur_1  << rem[0]
+#     _num_decodings(cur_1, rem[1..-1], result)
+#   end
+
+#   if rem[0..1].to_i.between?(10,26)
+#     cur_2 = cur.clone
+#     cur_2 << rem[0..1]
+#     _num_decodings(cur_2, rem[2..-1], result)
+#   end
+# end
+
+
+# def num_decodings_dp(s)
+#   if s.nil? || s.empty? || s[0] == '0'
+#     return 0
+#   end
+
+#   dp = Array.new(s.length + 1, 0)
+#   dp[0] = 1
+#   dp[1] = 1
+#   i = 2
+
+#   while i <= s.length
+#     dp[i] += dp[i-1] if s[i-1] > '0'
+#     dp[i] += dp[i-2] if s[i-2..i-1].between?('10', '26')
+#     i += 1
+#   end
+
+#   dp[i - 1]
+# end                        inx 0
+#                           0 1 2 3
+#   #                      "1 1 1 2"
+#                   //                 \\
+#                 A inx 1[112]         K inx2[12]
+#               //     \\             //      \\ 
+#             AA [12]   AK[2]       KA[2]      KL 
+#             //  \\    //   \\     // \\ 
+#          AAA[2]  KL  AKB     0   KAB  0
+#          //  \\ 
+#       AAAB    0
+
+# "1112"  
+#    ^      
+
+
+cache = {}
+def decode_ways(code, inx):
+  if inx == len(code):
+    return 1
+
+  if inx not in cache:
+    way1 = decode_ways(code, inx+1)
+    if int(code[inx:inx+2]) <= 26 and inx + 2 <= len(code):
+      way2 = decode_ways(code, inx+2)
+    else:
+      way2 = 0
+    cache[inx] = way1 + way2
+
+  return cache[inx]
+
+  
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# cache = {}
+
+# def decode_ways(str, inx):
+#   if inx == len(str):
+#     return 1  
+#   if str[inx] == '0':
+#     return 0
+
+#   if inx not in cache:
+#     way1 = decode_ways(str, inx+1)
+#     if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
+#       way2 = decode_ways(str, inx+2)
+#     else:
+#       way2 = 0
+#     cache[inx] = way1 + way2 
+
+#   return cache[inx]
+
+  
+print(decode_ways("1112", 0))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #           //        \\ 
+  #   "1"=A [112]        "11"=K [12]
+  #     //       \\           //  \\ 
+  #  AA [12]      AK[2]     KA[2]   KL
+  #  //    \\     //        //
+  # AAA[2]  AAL   AKA      KAB
+  # //   
+  # AAAB 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def decode_ways(str, inx):
+#   if inx == len(str):
+#     return 1
+
+#   # if str[inx] == '0':
+#   #   return 0
+  
+#   way1 = decode_ways(str, inx+1)
+#   if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
+#     way2 = decode_ways(str, inx+2)
+#   else:
+#     way2 = 0
+
+#   return way1 + way2
+
+# for i in range(1, 2000):
+#   print(i, ":", decode_ways(str(i), 0))
+
+# print(decode_ways("1112", 0))
+
+# str = "11"
+# print(str[1:10])
+
+
+
 
   
 
