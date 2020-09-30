@@ -359,8 +359,8 @@
 #                 A inx 1[112]         K inx2[12]
 #               //     \\             //      \\ 
 #             AA [12]   AK[2]       KA[2]      KL 
-#             //  \\    //   \\     // \\ 
-#          AAA[2]  KL  AKB     0   KAB  0
+#             //  \\    //   \\     //   \\ 
+#          AAA[2]  KL  AKB     0   KAB     0
 #          //  \\ 
 #       AAAB    0
 
@@ -383,45 +383,43 @@
 
 #   return cache[inx]
 
-  
-  
+# "12"
+#  ^
+ 
+# cache = {}
+# def decode_ways(code, inx):
+#   if inx = len(str):
+#     return 1
 
+#   way2 = 0
+#   if inx not in cache:
+#     if 1<= int(code[inx]) <=9:
+#       way1 = decode_ways(code, inx+1)
+#     if 10<= int(code[inx:inx+2]) <= 26:
+#       way2 = decode_ways(code, inx+2)
+#     cache[inx] = way1 + way2
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
+#   return cache[inx]
 
 
 # cache = {}
 
-# def decode_ways(str, inx):
+# def decode_ways(str, inx=0):
 #   if inx == len(str):
 #     return 1  
-#   if str[inx] == '0':
-#     return 0
 
+#   way1 = way2 = 0
 #   if inx not in cache:
-#     way1 = decode_ways(str, inx+1)
-#     if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
+#     if 1<= int(str[inx]) <= 9:
+#       way1 = decode_ways(str, inx+1)
+#     if 10<=int(str[inx:(inx+2)])<=26:
 #       way2 = decode_ways(str, inx+2)
-#     else:
-#       way2 = 0
 #     cache[inx] = way1 + way2 
 
 #   return cache[inx]
 
   
-print(decode_ways("1112", 0))
+print(decode_ways(""))
 
 
 
@@ -464,7 +462,7 @@ print(decode_ways("1112", 0))
 
 #   # if str[inx] == '0':
 #   #   return 0
-  
+
 #   way1 = decode_ways(str, inx+1)
 #   if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
 #     way2 = decode_ways(str, inx+2)
@@ -481,7 +479,22 @@ print(decode_ways("1112", 0))
 # str = "11"
 # print(str[1:10])
 
+# cache = {}
 
+# def numDecodings(s, index=0):
+#         if(index==len(s)):
+#             return 1
+#         if(index in cache):
+#             return cache[index]
+#         ret = 0
+#         if(1<=int(s[index])<=9):
+#             ret += numDecodings(s,index+1)
+#         if(10<=int(s[index:(index+2)])<=26):
+#             ret += numDecodings(s,index+2)
+#         cache[index]=ret
+#         return ret
+
+# print(numDecodings('01', 0))
 
 
   
