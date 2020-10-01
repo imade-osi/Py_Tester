@@ -212,6 +212,8 @@
 # print(array_of_array_products([2]) 
 # print(array_of_array_products([1]) 
 
+
+
 # def fib_helper(n, memo):
 #   if n <= 0:
 #     return 0
@@ -225,8 +227,6 @@
 # def memo_fib(n):
 #   memo = {}
 #   return fib_helper(n, memo)
-
-
 
 # print(memo_fib(5))
 
