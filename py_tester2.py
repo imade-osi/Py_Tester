@@ -211,7 +211,35 @@
 # print(array_of_array_products([3]) 
 # print(array_of_array_products([2]) 
 # print(array_of_array_products([1]) 
-    
+
+# def fib_helper(n, memo):
+#   if n <= 0:
+#     return 0
+#   if n == 1:
+#     return 1
+#   if n not in memo:
+#     memo[n] = fib_helper(n-1, memo) + fib_helper(n-2, memo)
+
+#   return memo[n]
+
+# def memo_fib(n):
+#   memo = {}
+#   return fib_helper(n, memo)
+
+
+
+# print(memo_fib(5))
+
+
+
+
+
+
+
+
+
+
+
 # def fib(n):
 
 #     fib_arr = []
@@ -223,7 +251,7 @@
 
 #     return fib(n-1) + fib(n-2)
 
-# def dynamicFib(num):
+# def iterative_fib(num):
 
 #     fib[0] = 0
 #     fib[1] = 1
@@ -233,7 +261,7 @@
 
 #     return fib[num]
 
-#     print(dynamicFib(0))
+#     print(iterative ib(0))
 
 
 # def minOp(str1, str2):
@@ -367,76 +395,12 @@
 # "1112"  
 #    ^      
 
-
-# cache = {}
-# def decode_ways(code, inx):
-#   if inx == len(code):
-#     return 1
-
-#   if inx not in cache:
-#     way1 = decode_ways(code, inx+1)
-#     if int(code[inx:inx+2]) <= 26 and inx + 2 <= len(code):
-#       way2 = decode_ways(code, inx+2)
-#     else:
-#       way2 = 0
-#     cache[inx] = way1 + way2
-
-#   return cache[inx]
-
-# "12"
-#  ^
- 
-# cache = {}
-# def decode_ways(code, inx):
-#   if inx = len(str):
-#     return 1
-
-#   way2 = 0
-#   if inx not in cache:
-#     if 1<= int(code[inx]) <=9:
-#       way1 = decode_ways(code, inx+1)
-#     if 10<= int(code[inx:inx+2]) <= 26:
-#       way2 = decode_ways(code, inx+2)
-#     cache[inx] = way1 + way2
-
-#   return cache[inx]
-
-
-# cache = {}
-
-# def decode_ways(str, inx=0):
-#   if inx == len(str):
-#     return 1  
-
-#   way1 = way2 = 0
-#   if inx not in cache:
-#     if 1<= int(str[inx]) <= 9:
-#       way1 = decode_ways(str, inx+1)
-#     if 10<=int(str[inx:(inx+2)])<=26:
-#       way2 = decode_ways(str, inx+2)
-#     cache[inx] = way1 + way2 
-
-#   return cache[inx]
-
-  
-#print(decode_ways(""))
-
-                 #"1112"
-  #           //        \\ 
-  #   "1"=A [112]        "11"=K [12]
-  #     //       \\           //  \\ 
-  #  AA [12]      AK[2]     KA[2]   KL
-  #  //    \\     //        //
-  # AAA[2]  AAL   AKA      KAB
-  # //   
-  # AAAB 
-
 # def decode_ways(str, inx):
 #   if inx == len(str):
 #     return 1
 
-#   # if str[inx] == '0':
-#   #   return 0
+#   if str[inx] == '0':
+#     return 0
 
 #   way1 = decode_ways(str, inx+1)
 #   if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
@@ -446,10 +410,29 @@
 
 #   return way1 + way2
 
+#print(decode_ways(""))
+
+ 
+cache = {}
+def decode_ways(code, inx):
+  if inx == len(code):
+    return 1
+
+  way1 = way2 = 0
+  if inx not in cache:
+    if 1<= int(code[inx]) <=9:
+      way1 = decode_ways(code, inx+1)
+    if 10<= int(code[inx:inx+2]) <= 26:
+      way2 = decode_ways(code, inx+2)
+    cache[inx] = way1 + way2
+
+  return cache[inx]
+
+print(decode_ways("01", 0))
+
+
 # for i in range(1, 2000):
 #   print(i, ":", decode_ways(str(i), 0))
-
-# print(decode_ways("1112", 0))
 
 # str = "11"
 # print(str[1:10])
