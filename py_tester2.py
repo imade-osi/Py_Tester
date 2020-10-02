@@ -233,12 +233,6 @@
 
 
 
-
-
-
-
-
-
 # def fib(n):
 
 #     fib_arr = []
@@ -317,8 +311,6 @@
 # print(second_largest([2,3,4,4 ]))
 
 
-
-
 # Problem Statement #
 # Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
 #
@@ -379,7 +371,8 @@
 #   end
 
 #   dp[i - 1]
-# end                        inx 0
+# end    
+#                            inx 0
 #                           0 1 2 3
 #   #                      "1 1 1 2"
 #                   //                 \\
@@ -427,7 +420,7 @@ def decode_ways(code, inx):
 
   return cache[inx]
 
-print(decode_ways("01", 0))
+print(decode_ways("1112", 0))
 
 
 # for i in range(1, 2000):
@@ -436,19 +429,19 @@ print(decode_ways("01", 0))
 # str = "11"
 # print(str[1:10])
 
-cache = {}
-def numDecodings(s, index=0):
-        if(index==len(s)):
-            return 1
-        if(index in cache):
-            return cache[index]
-        ret = 0
-        if(1<=int(s[index])<=9):
-            ret += numDecodings(s,index+1)
-        if(10<=int(s[index:(index+2)])<=26):
-            ret += numDecodings(s,index+2)
-        cache[index]=ret
-        return ret
+# cache = {}
+# def numDecodings(s, index=0):
+#         if(index==len(s)):
+#             return 1
+#         if(index in cache):
+#             return cache[index]
+#         ret = 0
+#         if(1<=int(s[index])<=9):
+#             ret += numDecodings(s,index+1)
+#         if(10<=int(s[index:(index+2)])<=26):
+#             ret += numDecodings(s,index+2)
+#         cache[index]=ret
+#         return ret
 
 # print(numDecodings('01', 0))
 
