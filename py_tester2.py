@@ -412,22 +412,22 @@
 #print(decode_ways(""))
 
  
-# cache = {}
-# def decode_ways(code, inx):
-#   if inx == len(code):
-#     return 1
+cache = {}
+def decode_ways(code, inx):
+  if inx == len(code):
+    return 1
 
-#   way1 = way2 = 0
-#   if inx not in cache:
-#     if 1<= int(code[inx]) <=9:
-#       way1 = decode_ways(code, inx+1)
-#     if 10<= int(code[inx:inx+2]) <= 26:
-#       way2 = decode_ways(code, inx+2)
-#     cache[inx] = way1 + way2
+  way1 = way2 = 0
+  if inx not in cache:
+    if 1<= int(code[inx]) <=9:
+      way1 = decode_ways(code, inx+1)
+    if 10<= int(code[inx:inx+2]) <= 26:
+      way2 = decode_ways(code, inx+2)
+    cache[inx] = way1 + way2
 
-#   return cache[inx]
+  return cache[inx]
 
-# print(decode_ways("01", 0))
+print(decode_ways("01", 0))
 
 
 # for i in range(1, 2000):
@@ -436,19 +436,19 @@
 # str = "11"
 # print(str[1:10])
 
-# cache = {}
-# def numDecodings(s, index=0):
-#         if(index==len(s)):
-#             return 1
-#         if(index in cache):
-#             return cache[index]
-#         ret = 0
-#         if(1<=int(s[index])<=9):
-#             ret += numDecodings(s,index+1)
-#         if(10<=int(s[index:(index+2)])<=26):
-#             ret += numDecodings(s,index+2)
-#         cache[index]=ret
-#         return ret
+cache = {}
+def numDecodings(s, index=0):
+        if(index==len(s)):
+            return 1
+        if(index in cache):
+            return cache[index]
+        ret = 0
+        if(1<=int(s[index])<=9):
+            ret += numDecodings(s,index+1)
+        if(10<=int(s[index:(index+2)])<=26):
+            ret += numDecodings(s,index+2)
+        cache[index]=ret
+        return ret
 
 # print(numDecodings('01', 0))
 
