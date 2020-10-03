@@ -420,7 +420,7 @@ def decode_ways(code, inx):
 
   return cache[inx]
 
-print(decode_ways("1112", 1))
+print(decode_ways("11122", 0))
 
 
 # for i in range(1, 2000):
