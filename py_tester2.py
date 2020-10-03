@@ -406,7 +406,7 @@
 
  
 cache = {}
-def decode_ways(code, inx):
+def decode_ways(code, inxx):
   if inx == len(code):
     return 1
 
