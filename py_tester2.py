@@ -405,22 +405,22 @@
 #print(decode_ways(""))
 
  
-cache = {}
-def decode_ways(code, inx):
-  if inx == len(code):
-    return 1
+# cache = {}
+# def decode_ways(code, inx):
+#   if inx == len(code):
+#     return 1
 
-  way1 = way2 = 0
-  if inx not in cache:
-    if 1<= int(code[inx]) <=9:
-      way1 = decode_ways(code, inx+1)
-    if 10<= int(code[inx:inx+2]) <= 26:
-      way2 = decode_ways(code, inx+2)
-    cache[inx] = way1 + way2
+#   way1 = way2 = 0
+#   if inx not in cache:
+#     if 1<= int(code[inx]) <=9:
+#       way1 = decode_ways(code, inx+1)
+#     if 10<= int(code[inx:inx+2]) <= 26:
+#       way2 = decode_ways(code, inx+2)
+#     cache[inx] = way1 + way2
 
-  return cache[inx]
+#   return cache[inx]
 
-print(decode_ways("1112222", 0))
+# print(decode_ways("1112", 0))
 
 
 # for i in range(1, 2000):
@@ -445,6 +445,8 @@ print(decode_ways("1112222", 0))
 
 # print(numDecodings('01', 0))
 
+
+def closest_leaf(k):
 
   
 
