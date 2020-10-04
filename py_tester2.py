@@ -446,9 +446,9 @@
 # print(numDecodings('01', 0))
 
 
-def closest_leaf(root, k):
-  if len(root) == 1 and k == root[0]
-  return k
+# def closest_leaf(root, k):
+#   if len(root) == 1 and k == root[0]
+#   return k
 
   
 
