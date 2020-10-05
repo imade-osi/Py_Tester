@@ -213,15 +213,15 @@
 # print(array_of_array_products([1]) 
 
 
-# def fib_helper(n, memo):
+# def fib_helper(n, memos):
 #   if n <= 0:
 #     return 0
 #   if n == 1:
 #     return 1
-#   if n not in memo:
-#     memo[n] = fib_helper(n-1, memo) + fib_helper(n-2, memo)
+#   if n not in memos:
+#     memos[n] = fib_helper(n-1, memos) + fib_helper(n-2, memos)
 
-#   return memo[n]
+#   return memos[n]
 
 # def memo_fib(n):
 #   memo = {}
@@ -472,7 +472,7 @@
 #   dfs(root, l, r)
 #   return ans
 
-print(isinstance(100.0, int))
+# print(isinstance(100.0, int))
 
 
 
