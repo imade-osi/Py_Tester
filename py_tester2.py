@@ -446,9 +446,35 @@
 # print(numDecodings('01', 0))
 
 
-def closest_leaf(root, k):
-  if len(root) == 1 and k == root[0]
-  return k
+# def closest_leaf(root, k):
+#   if len(root) == 1 and k == root[0]
+#   return k
+
+# def runningSum(nums):
+
+#   for i in range(1, len(nums)):
+#     nums[i] = nums[i - 1] + nums[i]
+  
+#   return nums 
+
+# print(runningSum([3,1,2,10,1]))
+
+# def dfs(node, l, r):
+#   if l <= node.val <= r
+#     ans += node.val
+#   if l < node.val:
+#     dfs(node.left)
+#   if r > node.val:
+#     dfs(node.right)
+
+def rangeSumBST(root, l, r):
+  ans = 0
+  dfs(root, l, r)
+  return ans
+
+print(isinstance(100.0, int))
+
+
 
   
 
