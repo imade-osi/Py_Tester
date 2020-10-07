@@ -213,21 +213,21 @@
 # print(array_of_array_products([1]) 
 
 
-def fib_helper(n, memo):
-  if n <= 0:
-    return 0
-  if n == 1:
-    return 1
-  if n not in memo:
-    memo[n] = fib_helper(n-1, memo) + fib_helper(n-2, memo)
+# def fib_helper(n, memo):
+#   if n <= 0:
+#     return 0
+#   if n == 1:
+#     return 1
+#   if n not in memo:
+#     memo[n] = fib_helper(n-1, memo) + fib_helper(n-2, memo)
 
-  return memo[n]
+#   return memo[n]
 
-def memo_fib(n):
-  memo = {}
-  return fib_helper(n, memo)
+# def memo_fib(n):
+#   memo = {}
+#   return fib_helper(n, memo)
 
-print(memo_fib(5))
+# print(memo_fib(5))
 
 
 
