@@ -384,7 +384,7 @@
 #          //  \\ 
 #       AAAB    0
 
-# "1112"  
+# "11112"  
 #    ^      
 
 # def decode_ways(str, inx):
