@@ -289,6 +289,7 @@
 # input [3,4,5,5,3,4,1,2,2,4,9,7]
 # output [1]
 
+
 # def single_checker(my_list):
 #     my_hash = {}
 
