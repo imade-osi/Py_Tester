@@ -79,7 +79,7 @@
 
 
 # def max_sum_subarray(arr):
-#     max_sum = arr[1]
+#     max_sum = arr[2]
 #     current_sum = arr[0]
 
 #     for num in arr[1:]:
