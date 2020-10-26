@@ -47,7 +47,7 @@
 #     # 'x' is not present in the  
 #     # binary tree  
 #     else: 
-#         print("No Path")
+#         print("No valid Path")
 
 # def word_flipper(our_string):
 #     """
@@ -79,7 +79,7 @@
 
 
 # def max_sum_subarray(arr):
-#     max_sum = arr[2]
+#     max_sum = arr[0]
 #     current_sum = arr[0]
 
 #     for num in arr[1:]:
