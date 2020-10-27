@@ -34,7 +34,7 @@
 # # the given node if the node lies in the binary tree  
 # def printPath(root, x): 
       
-#     # vector to store the path  
+#     # vector to store the path for return 
 #     arr = []  
       
 #     # if required node 'x' is present  
