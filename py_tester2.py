@@ -472,7 +472,7 @@
 #   dfs(root, l, r)
 #   return ans
 
-# print(isinstance(100, int))
+# print(isinstance(1000, int))
 
 # def next_biggest(num):
 

@@ -4,7 +4,7 @@
 # populates 'arr' with the given path  
 # def hasPath(root, arr, x): 
       
-#     # if root is None there is no path  
+#     #if root is None there is no path  
 #     if (not root): 
 #         return False
       
