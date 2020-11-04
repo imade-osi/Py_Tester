@@ -117,8 +117,8 @@
 
 
 #main function
-#1 iterate
-#if i+1 is less then i call flip with i as k
+# 1 iterate
+# if i+1 is less then i call flip with i as k
 
 
 #flip function 
