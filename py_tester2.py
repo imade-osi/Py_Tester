@@ -104,13 +104,13 @@
 # print(spiral_copy(inputMatrix))
 
 
-#naive solution
+#naive solution 
 #create helper method flip
 
 #outer method
 #iterate through the array checking for greatest number 
 #once found call flip with index of greatest number 
-#call flip with decreasing boundary 
+#call flip with decreasing boundary. 
 
 #flip method
 #flip number from begining to index of greatest number or k
