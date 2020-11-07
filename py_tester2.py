@@ -96,7 +96,7 @@
 #     direction, row, col = find_next_valid_pos(inputMatrix, nrows, ncols, visited, direction, row, col)
 #   return result
   
-# inputMatrix  = [ [1,    2,   3,  4,    5],
+# inputMatrix  =          [ [1,    2,   3,  4,    5],
 #                          [6,    7,   8,  9,   10],
 #                          [11,  12,  13,  14,  15],
 #                          [16,  17,  18,  19,  21] ]
