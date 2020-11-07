@@ -13,7 +13,7 @@
 
 # i = 0
 
-# ~~~~~~~~~~~~going right ==> ~~~~~~~~~
+# ~~~~~~~~~~~~going right ~~~~~~~~~
 # start at first row (2d_array[i])
 # iterate through first row 
 # going right ==>   #also have visited logic to make sure i dont renter cord (cl)
