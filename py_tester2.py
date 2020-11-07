@@ -116,7 +116,7 @@
 #flip number from begining to index of greatest number or k
 
 
-#main function
+#my main function
 # 1 iterate
 # if i+1 is less then i call flip with i as k
 
