@@ -121,7 +121,7 @@
 # if i+1 is less then i call flip with i as k
 
 
-#flip function 
+#my flip function 
 #1
 
 # def flip(arr, k):
