@@ -1,5 +1,5 @@
 # def spiral_copy(inputMatrix):
-#   pass # your code goes here
+# pass # your code goes here
 
 #naive solution
 #iterate through 2d array 
