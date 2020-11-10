@@ -9,7 +9,7 @@
 #the return the return array
 
 
-# ~~~~~~~spiral logic~~~~~~~~~~~
+# ~~~~~~~spiral logic~~~~~~~~~~~~
 
 # i = 0
 
