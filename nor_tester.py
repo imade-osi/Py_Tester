@@ -36,7 +36,7 @@ def minOp(str1, str2):
 
     return max(len(str1), len(str2)) - str_count
 
-# # print(minOp('sundayy', 'sunday'))
+print(minOp('sundayy', 'sunday'))
 
 
 
