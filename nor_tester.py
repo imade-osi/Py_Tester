@@ -9,17 +9,17 @@ def fib(n):
 
 print(fib(10))
 
-# # def dynamicFib(num):
+# def dynamicFib(num):
 
-# #     fib[0] = 0
-# #     fib[1] = 1
+#     fib[0] = 0
+#     fib[1] = 1
 
-# #     # for i in range(2, num):
-# #     #     fib[i] = fib[i-1] + fib[i-2]
+#     # for i in range(2, num):
+#     #     fib[i] = fib[i-1] + fib[i-2]
 
-# #     return fib[num]
+#     return fib[num]
 
-# #     print(dynamicFib(0))
+#     print(dynamicFib(0))
 
 
 # # def minOp(str1, str2):
