@@ -22,19 +22,19 @@ print(fib(10))
 #     print(dynamicFib(0))
 
 
-# # def minOp(str1, str2):
-# #     str_count = 0
+def minOp(str1, str2):
+    str_count = 0
 
-# #     if len(str1) < len(str2):
-# #         for ele in str1:
-# #             if ele in str2:
-# #                 str_count +=1 
-# #     else:
-# #         for ele in str2:
-# #             if ele in str1
-# #                 str_count +=1 
+    if len(str1) < len(str2):
+        for ele in str1:
+            if ele in str2:
+                str_count +=1 
+    else:
+        for ele in str2:
+            if ele in str1
+                str_count +=1 
 
-# #     return max(len(str1), len(str2)) - str_count
+    return max(len(str1), len(str2)) - str_count
 
 # # print(minOp('sundayy', 'sunday'))
 
