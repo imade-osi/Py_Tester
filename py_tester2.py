@@ -475,7 +475,7 @@
 # print(isinstance(1000, int))
 
 # def next_biggest(num):
-
+# def next_biggest(num):
 # test = 88
 # print(f"testing variable value is {test}")
 
