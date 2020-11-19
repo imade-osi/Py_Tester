@@ -395,7 +395,7 @@
 #     return 0
 
 #   way1 = decode_ways(str, inx+1)
-#   if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
+#       if int(str[inx:inx+2]) <= 26 and inx+2 <= len(str):
 #     way2 = decode_ways(str, inx+2)
 #   else:
 #     way2 = 0
@@ -476,6 +476,8 @@
 
 # def next_biggest(num):
 
+# test = 99
+# print(f"testing variable value is {test}")
 
 
 
