@@ -217,7 +217,7 @@
 #   if n <= 0:
 #     return 0
 #   if n == 1:
-#     return 1
+#     return 1f
 #   if n not in memo:
 #     memo[n] = fib_helper(n-1, memo) + fib_helper(n-2, memo)
 
@@ -384,12 +384,12 @@
 #          //  \\ 
 #       AAAB    0
 
-# "1112"  
-#    ^      
+# 1112
+#  ^ 
 
 # def decode_ways(str, inx):
-#   if inx == len(str)
-#     return 1
+#   if inx == str(inx)
+#     return 1 
 
 #   if str[inx] == '0':
 #     return 0
