@@ -9,7 +9,7 @@
 #the return the return array
 
 
-# ~~~~~~~spiral logic~~~~~~~~~~~
+# ~~~~~~~spiral logic~~~~~~~~~~~~
 
 # i = 0
 
@@ -228,10 +228,6 @@
 #   return fib_helper(n, memo)
 
 # print(memo_fib(8))
-
-
-
-
 
 # def fib(n):
 
@@ -479,7 +475,14 @@
 # test = 88
 # print(f"testing variable value is {test}")
 
+# def newArray(num):
+#     new_hash = {}
+    
+#     for ele in num
 
+#     return new_hash
 
   
 
+
+# for i in range(len(nums) - 1)
