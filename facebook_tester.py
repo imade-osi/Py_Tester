@@ -12,13 +12,13 @@
 # a.reverse()
 # print(f'array: {a}')
 
-x = 10 
-y = 5
+# x = 10 
+# y = 5
 
-x, y = y, x
+# x, y = y, x
 
-print('x =', x, 'thank you')
-print(f'y = {y}')
+# print('x =', x, 'thank you')
+# print(f'y = {y}')
 
 # def rotateImage(a):
 #     a.reverse()
@@ -26,3 +26,25 @@ print(f'y = {y}')
 #         for j in range(i):
 #             a[i][j], a[j][i] = a[j][i], a[i][j]
 #     return a
+
+
+
+def sudoku2(grid): 
+    row_count = {}
+    col_count = {}
+    
+    for i in range(len(grid)):
+        col_count[i] = {}
+        
+        for j in range(len(grid[0])):
+            if grid[i][j] != ".":
+                if grid[i][j] not in col_count[i]:
+                     col_count[i][grid[i][j]] = True
+                if grid[i][j] not in row_count:
+                    row_count[grid[i][j]] = True
+                else:
+                    return False
+        row_count = {}
+         
+    return True 
+        
