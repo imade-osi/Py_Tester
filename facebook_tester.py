@@ -12,20 +12,20 @@
 # a.reverse()
 # print(f'array: {a}')
 
-# x = 10 
-# y = 5
+x = 10 
+y = 5
 
-# x, y = y, x
+x, y = y, x
 
 # print('x =', x, 'thank you')
 # print(f'y = {y}')
 
-def rotateImage(a):
-    a.reverse()
-    for i in range(len(a)):
-        for j in range(i):
-            a[i][j], a[j][i] = a[j][i], a[i][j]
-    return a
+# def rotateImage(a):
+#     a.reverse()
+#     for i in range(len(a)):
+#         for j in range(i):
+#             a[i][j], a[j][i] = a[j][i], a[i][j]
+#     return a
 
 grid:
 [[".",".","4",".",".",".","6","3","."], 
