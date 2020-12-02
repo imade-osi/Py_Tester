@@ -5,12 +5,20 @@
 # b = [[x for x in range(4)] for j in range(4) ]
 # print(f'array b: {b}')
 
-a = [[1,2,3], 
-    [4,5,6], 
-    [7,8,9]]
+# a = [[1,2,3], 
+#     [4,5,6], 
+#     [7,8,9]]
 
-rev = a.reverse()
-print(rev)
+# a.reverse()
+# print(f'array: {a}')
+
+x = 10 
+y = 5
+
+x, y = y, x
+
+print('x =', x, 'thank you')
+print(f'y = {y}')
 
 # def rotateImage(a):
 #     a.reverse()
@@ -18,4 +26,3 @@ print(rev)
 #         for j in range(i):
 #             a[i][j], a[j][i] = a[j][i], a[i][j]
 #     return a
-
