@@ -37,24 +37,24 @@
 #  [".",".",".",".",".",".",".",".","."], 
 #  [".",".",".",".",".",".",".",".","."]]
 
-def sudoku2(grid): 
-    row_count = {}
-    col_count = {}
+# def sudoku2(grid): 
+#     row_count = {}
+#     col_count = {}
     
-    for i in range(len(grid)):
-        col_count[i] = {}
+#     for i in range(len(grid)):
+#         col_count[i] = {}
         
-        for j in range(len(grid[0])):
-            if grid[i][j] != ".":
-                if grid[i][j] not in col_count[i]:
-                     col_count[i][grid[i][j]] = True
-                if grid[i][j] not in row_count:
-                    row_count[grid[i][j]] = True
-                else:
-                    return False
-        row_count = {}
+#         for j in range(len(grid[0])):
+#             if grid[i][j] != ".":
+#                 if grid[i][j] not in col_count[i]:
+#                      col_count[i][grid[i][j]] = True
+#                 if grid[i][j] not in row_count:
+#                     row_count[grid[i][j]] = True
+#                 else:
+#                     return False
+#         row_count = {}
          
-    return True 
+#     return True 
 
 # input : [-6, -5, 2, 3, 4]
 # output: [36, 25, 4, 9, 16] => sorted (my pref)
