@@ -75,12 +75,10 @@ def sorted_arr(arr):
     if len(arr) == 0:
         return []
     
-    
     for ele in arr:
         ele = ele*ele
         sorted_return.append(ele)
     
-    sorted_return.sort()
-    
+    sorted_return.sort() 
     return sorted_return
 
