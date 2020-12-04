@@ -1,7 +1,6 @@
 # a = [float(x) for x in range(10, 21) if x %2 == 0]
 # print(f'array a:{a}')
 
-
 # b = [[x for x in range(4)] for j in range(4) ]
 # print(f'array b: {b}')
 
@@ -63,9 +62,7 @@ def sudoku2(grid):
 # 1.) [-6, -5, 2, 3, 4]
 #       ^
 # 2.) [36, 25, 4, 9, 16]
-
 # 3.) sort 
-
 # 4.) return sorted array 
 
 
