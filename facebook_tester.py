@@ -56,8 +56,8 @@
          
 #     return True 
 
-# input : [-6, -5, 2, 3, 4]
-# output: [36, 25, 4, 9, 16] => sorted (my pref)
+# input : [-6, -5, 2, 3, 4, 7]
+# output: [36, 25, 4, 9, 16, 49] => sorted (my pref)
     
 # 1.) [-6, -5, 2, 3, 4]
 #       ^
