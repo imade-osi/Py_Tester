@@ -56,14 +56,32 @@
          
 #     return True 
 
-# input : [-6, -5, 2, 3, 4, 7, 9]
-# output: [36, 25, 4, 9, 16, 49, 81] => sorted (my pref)
+
+
+
+# Welcome to Facebook!
+
+# This is just a simple shared plaintext pad, with no execution capabilities.
+
+# When you know what language you would like to use for your interview,
+# simply choose it from the dropdown in the top bar.
+
+# Enjoy your interview!
+
+# input sorted: [-6, -5, 2, 3, 4]
+# squared value:[36, 25, 4, 9, 16]
+# output sorted:[36, 25, 16, 9, 4] or [4, 9, 16, 25, 36]
+
+input : [-6, -5, 2, 3, 4]
+output: [36, 25, 4, 9, 16] => sorted (my pref)
     
-# 1.) [-6, -5, 2, 3, 4]
-#       ^
-# 2.) [36, 25, 4, 9, 16]
-# 3.) sort 
-# 4.) return sorted array 
+1.) [-6, -5, 2, 3, 4]
+      ^
+2.) [36, 25, 4, 9, 16]
+
+3.) sort 
+
+4.) return sorted array 
 
 
 def sorted_arr(arr):
@@ -72,10 +90,65 @@ def sorted_arr(arr):
     if len(arr) == 0:
         return []
     
+    
     for ele in arr:
         ele = ele*ele
         sorted_return.append(ele)
     
-    sorted_return.sort() 
+    sorted_return.sort()
+    
     return sorted_return
 
+
+    
+String s1
+String s2
+String s1 + s2
+
+input: "18","13"
+              ^
+output: "23"
+
+    
+    [0,1,2,3,4,5,6,7,8,9]
+    
+    
+    
+    1
+    18
+    ^
++   13
+    ^
+    31
+     ^ 
+    
+def add_remainder(sum):
+    nem_sum = ""
+    
+    new_sum.prepend(sum[1])
+    
+    return new_sum
+    
+    
+def sum_calc(str1, str2):
+    sum1 = ""
+    sum2 = ""
+    
+    num_hash ={"0": 0, "1": 1,  1,2,3,4,5,6,7,8,9}
+    
+    for digit in range(-1, len(str1)):
+        
+        if sum > 9:
+            add_remainder(sum1) 
+        else: 
+        sum1.prepend(num_hash[str1[digit]] + num_hash[str2[digit]])
+        
+    
+#     for digit in range(-1, len(str2)):
+        
+#         sum1.prepend(num_hash[str1[digit]] + num_hash[str2[digit]])
+        
+    
+    return sum
+
+    
