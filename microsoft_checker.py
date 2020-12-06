@@ -16,22 +16,55 @@
 # N is an integer within the range [1..100,000];
 # each element of array A is an integer within the range [−1,000,000..1,000,000].
 
-def solution(A):
-    smallest_check = 1
-    num_hash = {}
+# def solution(A):
+#     smallest_check = 1
+#     num_hash = {}
     
-    for ele in A:
-        if ele not in num_hash:
-            num_hash[ele] = True
+#     for ele in A:
+#         if ele not in num_hash:
+#             num_hash[ele] = True
             
-    while(True):
-        if smallest_check in num_hash:
-            smallest_check += 1
-        else:
-            break
+#     while(True):
+#         if smallest_check in num_hash:
+#             smallest_check += 1
+#         else:
+#             break
     
-    return smallest_check
+#     return smallest_check
     
-    pass
+#     pass
 
 
+
+# def solution(N, K):
+#     if N == 0:
+#         return [""]
+#     result = []
+#     for p in solution(N - 1, K + 1):
+#         for l in "abc":
+#             if p[-1:] != l:
+#                 result += [p + l]
+#     return result[:K]
+
+# print(solution(3,10))
+
+
+# def solution(A):
+#     # write your code in Python 3.6
+#     max_val = len(A)
+#     num_hash = {}
+    
+#     for ele in A:
+#         if ele not in num_hash:
+#             num_hash[ele] = 1
+#         else:
+#             num_hash[ele] += 1
+    
+#     while max_val >= 0:
+#         if  max_val in num_hash and num_hash[max_val] == max_val:
+#             break
+#         max_val -= 1
+        
+#     return max_val
+
+# print(solution([3,4,5,2,8,9,2,3,3]))
