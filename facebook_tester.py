@@ -75,13 +75,13 @@
 input : [-6, -5, 2, 3, 4]
 output: [36, 25, 4, 9, 16] => sorted (my pref)
     
-1.) [-6, -5, 2, 3, 4]
-      ^
-2.) [36, 25, 4, 9, 16]
+# 1.) [-6, -5, 2, 3, 4]
+#       ^
+# 2.) [36, 25, 4, 9, 16]
 
-3.) sort 
+# 3.) sort 
 
-4.) return sorted array 
+# 4.) return sorted array 
 
 
 def sorted_arr(arr):

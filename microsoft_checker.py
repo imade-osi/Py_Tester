@@ -68,3 +68,28 @@
 #     return max_val
 
 # print(solution([3,4,5,2,8,9,2,3,3]))
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+
+def solution(A, B):
+   
+    count = 1
+    A1 = sum(A[:1])
+    A2 = sum(A[1:])
+    B1 = sum(B[:1])
+    B2 = sum(B[1:])
+    
+    for i in range(1, len(A) - 1):
+        if A1 == A2 and B1 == B2:
+            count += 1
+        
+        A1 += A[i]
+        A2 -= A[i]
+        
+        B1 += B[i]
+        B2 -= B[i]
+        
+    
+    return count
+    pass
