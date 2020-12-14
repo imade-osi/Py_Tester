@@ -49,25 +49,25 @@
 # print(solution(3,10))
 
 
-# def solution(A):
-#     # write your code in Python 3.6
-#     max_val = len(A)
-#     num_hash = {}
+def solution(A):
+    # write your code in Python 3.6
+    max_val = len(A)
+    num_hash = {}
     
-#     for ele in A:
-#         if ele not in num_hash:
-#             num_hash[ele] = 1
-#         else:
-#             num_hash[ele] += 1
+    for ele in A:
+        if ele not in num_hash:
+            num_hash[ele] = 1
+        else:
+            num_hash[ele] += 1
     
-#     while max_val >= 0:
-#         if  max_val in num_hash and num_hash[max_val] == max_val:
-#             break
-#         max_val -= 1
+    while max_val >= 0:
+        if  max_val in num_hash and num_hash[max_val] == max_val:
+            break
+        max_val -= 1
         
-#     return max_val
+    return max_val
 
-# print(solution([3,4,5,2,8,9,2,3,3]))
+print(solution([3,4,5,2,8,9,2,3,3,4,4,4]))
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
