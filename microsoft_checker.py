@@ -49,7 +49,7 @@
 # print(solution(3,10))
 
 
-def solution(a):
+def solution(A):
     # write your code in Python 3.6
     max_val = len(A)
     num_hash = {}
