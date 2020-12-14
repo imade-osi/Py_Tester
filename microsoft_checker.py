@@ -49,7 +49,7 @@
 # print(solution(3,10))
 
 
-def solution(A):
+def solution(a):
     # write your code in Python 3.6
     max_val = len(A)
     num_hash = {}
@@ -67,7 +67,8 @@ def solution(A):
         
     return max_val
 
-print(solution([3,4,5,2,8,9,2,3,3,4,4,4]))
+print(solution([3,4,5,2,8,9,2,3,3]))
+
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
