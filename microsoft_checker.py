@@ -74,7 +74,7 @@
 
 # def solution(A, B):
    
-#     count = 1
+#     count = 2
 #     A1 = sum(A[:1])
 #     A2 = sum(A[1:])
 #     B1 = sum(B[:1])
