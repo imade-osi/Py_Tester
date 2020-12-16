@@ -98,3 +98,20 @@
 # def findDuplicates(arr):
 # p1, p2
 #     return num
+
+def sortedSquares(nums):
+        return_arr = [0 for ele in range(len(nums))]
+        lp = 0
+        rp = len(nums) - 1
+        return_p = len(nums) - 1
+        
+        while lp <= rp:
+            if nums[lp] ** 2 > nums[rp] ** 2:
+                return_arr[return_p] = nums[lp] ** 2
+                lp += 1
+            else:
+                return_arr[return_p] = nums[rp] ** 2
+                rp -= 1
+            return_p -= 1
+               
+        return return_arr
