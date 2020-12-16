@@ -96,5 +96,5 @@
 #     pass
 
 def findDuplicates(arr):
-
+    
     return num

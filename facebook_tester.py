@@ -150,7 +150,7 @@
 
 # 3.) [1, 4, 9, 16, 25] 
 
-# 4.) Not enough information to solve
+# 4.) Not enough info to solve
 
  
 
