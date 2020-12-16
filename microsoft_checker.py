@@ -99,19 +99,41 @@
 # p1, p2
 #     return num
 
-def sortedSquares(nums):
-        return_arr = [0 for ele in range(len(nums))]
-        lp = 0
-        rp = len(nums) - 1
-        return_p = len(nums) - 1
+# def sortedSquares(nums):
+#         return_arr = [0 for ele in range(len(nums))]
+#         lp = 0
+#         rp = len(nums) - 1
+#         return_p = len(nums) - 1
         
-        while lp <= rp:
-            if nums[lp] ** 2 > nums[rp] ** 2:
-                return_arr[return_p] = nums[lp] ** 2
-                lp += 1
-            else:
-                return_arr[return_p] = nums[rp] ** 2
-                rp -= 1
-            return_p -= 1
+#         while lp <= rp:
+#             if nums[lp] ** 2 > nums[rp] ** 2:
+#                 return_arr[return_p] = nums[lp] ** 2
+#                 lp += 1
+#             else:
+#                 return_arr[return_p] = nums[rp] ** 2
+#                 rp -= 1
+#             return_p -= 1
                
-        return return_arr
+#         return return_arr
+
+
+
+def removeDuplicates(self, nums: List[int]) -> int:
+        i = 0
+        
+        for j in range(len(nums)):
+            if nums[i] != nums[j]:
+                i += 1
+                nums[i] = nums[j]
+            
+        return i + 1
+        
+        
+        
+        
+#    input: [0,0,1,1,1,2,2,3,3,4]
+#    output: 5
+    
+#             i
+#    [0,1,2,3,1,0,2,2,3,4]
+#                       j
