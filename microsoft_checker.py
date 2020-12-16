@@ -116,6 +116,16 @@
                
 #         return return_arr
 
+#     input: [-4,-1,0,3,10] 
+#     output: [0,1,9,16,100]
+        
+#    [-4,-1,0,3,10]
+#           lr
+#            0    
+        
+#    [0, 1,9,16,100]
+#     ^
+    
 
 
 def removeDuplicates(self, nums: List[int]) -> int:
