@@ -95,6 +95,6 @@
 #     return count
 #     pass
 
-def findDuplicates(arr):
-    
-    return num
+# def findDuplicates(arr):
+
+#     return num
