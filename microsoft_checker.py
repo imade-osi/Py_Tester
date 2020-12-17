@@ -105,7 +105,7 @@
 #         rp = len(nums) - 1
 #         return_p = len(nums) - 1
         
-#         while lp <= rp:
+#         while lp <= rp:             
 #             if nums[lp] ** 2 > nums[rp] ** 2:
 #                 return_arr[return_p] = nums[lp] ** 2
 #                 lp += 1
@@ -130,8 +130,9 @@
 
 # def removeDuplicates(self, nums: List[int]) -> int:
 #         i = 0
-        
-#         for j in range(len(nums)):
+#         k = 1
+#       
+#        for j in range(len(nums)):
 #             if nums[i] != nums[j]:
 #                 i += 1
 #                 nums[i] = nums[j]
