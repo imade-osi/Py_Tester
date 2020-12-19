@@ -176,7 +176,7 @@ input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */",
         "const a= b /c;",
         ""
         "/*kdkmskdpmspmpc",
-                  ^
+            ^
         "vsdnlksmklvmlsk",
                         ^  
         "sndjlsknlkskl*/",
