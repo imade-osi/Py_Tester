@@ -147,3 +147,38 @@
 #             i
 #    [0,1,2,3,1,0,2,2,3,4,5]
 #                   j
+
+arr = [7,1,5,3,6,4] 
+
+def maxProfit(arr):
+    max_prof = 0
+    temp_max = 0
+    lowest_buy = arr[0] 
+
+
+    for i in range(1, len(arr)):
+        if arr[i] < lowest_buy:
+            lowest_buy = arr[i] 
+        
+        temp_max = arr[i] - lowest_buy
+
+        if temp_max > max_prof:
+            max_prof = temp_max
+        
+    return max_prof
+
+
+print("This is a debug message")
+
+input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */", 
+        "// fdnfknsdklflknlsdkmflsmdfl",
+        "println("a message") // With a comment",
+        "const a= b /c;",
+        ""
+        "/*kdkmskdpmspmpc",
+                  ^
+        "vsdnlksmklvmlsk",
+                        ^  
+        "sndjlsknlkskl*/",
+                       ^     
+]
