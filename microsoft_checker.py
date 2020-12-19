@@ -150,7 +150,7 @@
 # 
 #                  j
 
-arr = [7,1,5,3,6,4] 
+arr = [7,1,7,3,6,4] 
 def maxProfit(arr):
     max_prof = 0
     temp_max = 0
