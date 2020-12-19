@@ -170,17 +170,17 @@ def maxProfit(arr):
 
 print(maxProfit(arr)):
 
-print("This is a debug message")
+# print("This is a debug message")
 
-input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */", 
-        "// fdnfknsdklflknlsdkmflsmdfl",
-        "println("a message") // With a comment",
-        "const a = b / c;",
-        ""
-        "/*kdkmskdpmspmpc",
-            ^
-        "vsdnlksmklvmlsk",
-                        ^  
-        "sndjlsknlkskl*/",
-               ^     
-        ]
+# input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */", 
+#         "// fdnfknsdklflknlsdkmflsmdfl",
+#         "println("a message") // With a comment",
+#         "const a = b / c;",
+#         ""
+#         "/*kdkmskdpmspmpc",
+#             ^
+#         "vsdnlksmklvmlsk",
+#                         ^  
+#         "sndjlsknlkskl*/",
+#                ^     
+#         ]
