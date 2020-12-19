@@ -150,25 +150,25 @@
 # 
 #                  j
 
-arr = [7,1,7,3,6,4] 
-def maxProfit(arr):
-    max_prof = 0
-    temp_max = 0
-    lowest_buy = arr[0] 
+# arr = [7,1,7,3,6,4] 
+# def maxProfit(arr):
+#     max_prof = 0
+#     temp_max = 0
+#     lowest_buy = arr[0] 
 
 
-    for i in range(1, len(arr)):
-        if arr[i] < lowest_buy:
-            lowest_buy = arr[i] 
+#     for i in range(1, len(arr)):
+#         if arr[i] < lowest_buy:
+#             lowest_buy = arr[i] 
         
-        temp_max = arr[i] - lowest_buy
+#         temp_max = arr[i] - lowest_buy
 
-        if temp_max > max_prof:
-            max_prof = temp_max
+#         if temp_max > max_prof:
+#             max_prof = temp_max
         
-    return max_prof
+#     return max_prof
 
-print(maxProfit(arr)):
+# print(maxProfit(arr)):
 
 # print("This is a debug message")
 
