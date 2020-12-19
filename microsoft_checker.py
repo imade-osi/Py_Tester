@@ -181,6 +181,5 @@
 #             ^
 #         "vsdnlksmklvmlsk",
 #                         ^  
-#         "sndjlsknlkskl*/",
+#         "sndjlsknlkskl*/", ]
 #                ^     
-#         ]
