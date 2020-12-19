@@ -146,10 +146,11 @@
     
 #             i
 #    [0,1,2,3,1,0,2,2,3,4,5]
-#                   j
+#  
+# 
+#                  j
 
 arr = [7,1,5,3,6,4] 
-
 def maxProfit(arr):
     max_prof = 0
     temp_max = 0
@@ -167,18 +168,19 @@ def maxProfit(arr):
         
     return max_prof
 
+print(maxProfit(arr)):
 
 print("This is a debug message")
 
 input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */", 
         "// fdnfknsdklflknlsdkmflsmdfl",
         "println("a message") // With a comment",
-        "const a= b /c;",
+        "const a = b / c;",
         ""
         "/*kdkmskdpmspmpc",
             ^
         "vsdnlksmklvmlsk",
                         ^  
         "sndjlsknlkskl*/",
-                       ^     
-]
+               ^     
+        ]
