@@ -38,6 +38,10 @@ var items = [
     { name: 'Zeros', value: 37 }
 ];
 
+// sort by value
+items.sort(function (a, b) {
+    return a.value - b.value;
+});
 
 
 
