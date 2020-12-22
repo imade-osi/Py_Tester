@@ -30,7 +30,7 @@
 // return directions
 
 var items = [
-    { name: 'Edward', value: 21 },
+    { name: 'Edward', value: 20 },
     { name: 'Sharpe', value: 37 },
     { name: 'And', value: 45 },
     { name: 'The', value: -12 },
