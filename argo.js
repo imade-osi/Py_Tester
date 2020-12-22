@@ -19,15 +19,15 @@
 //return that number 
 
 
-function path_count();
+// function path_count();
 
-const number_of_steps = (N + M) - 1
-var directions = 2
+// const number_of_steps = (N + M) - 1
+// var directions = 2
 
-for (i = 0; i < number_of_steps; i++);
-directions *= 2
+// for (i = 0; i < number_of_steps; i++);
+// directions *= 2
 
-return directions
+// return directions
 
 
 
