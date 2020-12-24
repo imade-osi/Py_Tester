@@ -132,12 +132,12 @@
 
 # Part 3.)  Example Problem 
 
-# Q.) Given an array of both positive and negative integers. 
-# The task is to sort the square of the numbers of the Array. 
+Q.) Given an array of both positive and negative integers. 
+The task is to sort the square of the numbers of the Array. 
 
-# Examples: 
-# Input  : arr = [5, 3, -1, 2, -4]
-# Output : [1, 4, 9, 16, 25] 
+Examples: 
+Input  : arr = [5, 3, -1, 2, -4]
+Output : [1, 4, 9, 16, 25] 
 
 
 
@@ -183,18 +183,18 @@
 # 4.) return sorted array 
 
 
-# def sorted_arr(arr):
+def sorted_arr(arr):
 
-#     #1.)
-#     for i in range(len(arr)):   
-#         #2.)
-#         arr[i] = arr[i] * arr[i]  
+    #1.)
+    for i in range(len(arr)):   
+        #2.)
+        arr[i] = arr[i] * arr[i]  
         
-#     #3.)
-#     arr.sort() 
+    #3.)
+    arr.sort() 
     
-#     #4.)
-#     return arr
+    #4.)
+    return arr
 
 
 
