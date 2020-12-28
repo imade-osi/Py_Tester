@@ -182,43 +182,43 @@
 #         "sndjlsknlkskl*/", ]
 #                ^     
 
-# def dnaComplement(s):
-#     p = len(s) - 1
-#     rev_s = ""
+def dnaComplement(s):
+    p = len(s) - 1
+    rev_s = ""
     
-#     while p >= 0:
-#         char = s[p]
-#         if char == 'A':
-#             char = 'T'
-#         elif char == 'T': 
-#             char = 'A' 
-#         elif char == 'C': 
-#             char = 'G'
-#         elif char == 'G': 
-#             char = 'C'
-#         rev_s += char
-#         p -= 1
+    while p >= 0:
+        char = s[p]
+        if char == 'A':
+            char = 'T'
+        elif char == 'T': 
+            char = 'A' 
+        elif char == 'C': 
+            char = 'G'
+        elif char == 'G': 
+            char = 'C'
+        rev_s += char
+        p -= 1
         
-#     return rev_s
+    return rev_s
 
-# print(dnaComplement('ACCGGGTTTT')) 
-# 
+print(dnaComplement('ACCGGGTTTT')) 
+
 # 
 
-def numDuplicates(name, price, weight):
-    inx = 0
-    dups = 0
-    dup_hash = {}
+# def numDuplicates(name, price, weight):
+#     inx = 0
+#     dups = 0
+#     dup_hash = {}
     
-    while inx < len(name):
-        if name[inx] not in dup_hash:
-            dup_hash[name[inx]] = price[inx]
-        else:
-            if dup_hash[name[inx]] == weight[inx]:
-                dups += 1
-        inx += 1
+#     while inx < len(name):
+#         if name[inx] not in dup_hash:
+#             dup_hash[name[inx]] = price[inx]
+#         else:
+#             if dup_hash[name[inx]] == weight[inx]:
+#                 dups += 1
+#         inx += 1
         
-    return dups    
+#     return dups    
 
 
-print(numDuplicates(['ball', 'bat', 'glove', 'glove', 'glove' ], [2,3,1,2,1], [2,5,1,1,1]))
+# print(numDuplicates(['ball', 'bat', 'glove', 'glove', 'glove' ], [2,3,1,2,1], [2,5,1,1,1]))
