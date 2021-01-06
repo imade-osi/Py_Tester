@@ -552,7 +552,7 @@ def QS(arr, a b):
         
 #     return rev_s
 
-# print(dnaComplement('ACCGGGTTTT')) 
+# print(dnaComplement('ACCGGGTTT')) 
 
 # 
 
