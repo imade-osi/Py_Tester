@@ -572,4 +572,4 @@ def QS(arr, a b):
 #     return dups    
 
 
-# print(numDuplicates(['ball', 'bat', 'glove', 'glove', 'glove' ], [2,3,1,2,1], [2,5,1,1,1]))
+# print(numDuplicates(['ball', 'bat', 'glov', 'glov', 'glov' ], [2,3,1,2,1], [2,5,1,1,1]))
