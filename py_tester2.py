@@ -488,44 +488,44 @@
 # for i in range(len(nums) - 1)
 
 
-Quicksort:
-time  O(n logn)
-space O(1)
+# Quicksort:
+# time  O(n logn)
+# space O(1)
 
-4 3 2 3 5 1 3 1
+# 4 3 2 3 5 1 3 1
 
-QS(arr, 0, 7)    QS(arr, a, b)
-4 3 2 3 5 1 3 1  input
-1. p = getPivot(arr, a, b)   p = 3
-2. x, y = partition(arr, p, a, b)      [e<p  e=p  e>p]
-4 3 2 3 5 1 3 1  input
-a             b
-2 1 1  3 3 3 5 4  output
-a x         y b
+# QS(arr, 0, 7)    QS(arr, a, b)
+# 4 3 2 3 5 1 3 1  input
+# 1. p = getPivot(arr, a, b)   p = 3
+# 2. x, y = partition(arr, p, a, b)      [e<p  e=p  e>p]
+# 4 3 2 3 5 1 3 1  input
+# a             b
+# 2 1 1  3 3 3 5 4  output
+# a x         y b
 
-1 1 2       
-a  x 
+# 1 1 2       
+# a  x 
 
-3 3 3 5 4
+# 3 3 3 5 4
 
- [ 2 1 1, 3 3 3, 5 4 ]
+#  [ 2 1 1, 3 3 3, 5 4 ]
     
-3. Recursive step
-QS(arr, 0, 2)  QS(arr, a, x)  
-QS(arr, 6, 7)  QS(arr, y, b)
+# 3. Recursive step
+# QS(arr, 0, 2)  QS(arr, a, x)  
+# QS(arr, 6, 7)  QS(arr, y, b)
 
 
 
-def QS(arr, a b):
-    # if a >= b:
-    if a >= b:
-        return 
+# def QS(arr, a b):
+#     # if a >= b:
+#     if a >= b:
+#         return 
 
-    p = getPivot(arr, a, b)
-    x, y = partition(arr, p, a, b) 
+#     p = getPivot(arr, a, b)
+#     x, y = partition(arr, p, a, b) 
     
-        QS(arr, a, x)
-        QS(arr, y, b)  
+#         QS(arr, a, x)
+#         QS(arr, y, b)  
 
 
 # you can write to stdout for debugging purposes, e.g.
