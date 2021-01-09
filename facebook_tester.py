@@ -209,3 +209,52 @@ def sorted_arr(arr):
 
 
 #STAY TUNED NEXT WEEK FOR HASHES!!! {}
+
+["19-0001", HDD, RAM, GPU, HDD, GPU, Chassis]
+                 
+ [ GPU, HDD, GPU, RAM] 
+
+'RAM' = 1
+'GPU' = 1
+'HDD' = 1
+
+[size:]
+    pallet_size += 1
+    'GPU' = 2
+    'HDD' = 1
+
+    
+      
+           
+    window[8] = arr[8]
+
+pallet_size = 5
+
+pallets_with_repetitions = 3
+
+n*k
+
+def partition_count(arr, size):
+    window = [ for ele in range(size)] 
+    part_hash = {}
+    pallet_rep = 0
+    front = 0
+    end = size - 1
+    
+    for i in range(len(size)):
+        window[i] = arr[i]
+        
+        # if key not in part_hash:
+        # del part_hash key
+
+        
+        
+        if i == size:
+            for ele in window:
+                if ele in part_hash:
+                   pallet_rep += 1
+                else:
+                    part_hash[ele] = True
+            part_hash = {}
+    
+    return pallet
