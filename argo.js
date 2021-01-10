@@ -31,7 +31,7 @@
 
 var items = [
     { name: 'Edward', value: 22 },
-    { name: 'Sharpe', value: 38 },
+    { name: 'Sharpe', value: 30 },
     { name: 'And', value: 45 },
     { name: 'The', value: -12 },
     { name: 'Magnetic', value: 13 },
