@@ -46,7 +46,7 @@
 #                 result += [p + l]
 #     return result[:K]
 
-# print(solution(3,10))
+# print(solution(3,15))
 
 
 # def solution(A):
