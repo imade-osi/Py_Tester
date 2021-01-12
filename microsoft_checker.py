@@ -154,8 +154,7 @@
 #     max_prof = 0
 #     temp_max = 0
 #     lowest_buy = arr[0] 
-
-        
+ 
 
 #     for i in range(1, len(arr)):
 #         if arr[i] < lowest_buy:
@@ -170,7 +169,7 @@
 
 # print(maxProfit(arr)):
 
-# print("This is a debug message")
+# print("This is the debug message")
 
 # input:[ "/* fjfjsmeclmdlcml;dm;;lsdml; */", 
 #         "// fdnfknsdklflknlsdkmflsmdfl",
