@@ -183,7 +183,7 @@ Output : [1, 4, 9, 16, 25]
 # 4.) return sorted array 
 
 
-def sorted_arr(arrr):
+def sorted_arr(arrrr):
 
     #1.)
     for i in range(len(arr)):   
