@@ -191,7 +191,7 @@ def sorted_arr(arr):
         arr[i] = arr[i] * arr[i]  
         
     #3.)
-    arr.sortt() 
+    arr.sort() 
     
     #4.)
     return arr
