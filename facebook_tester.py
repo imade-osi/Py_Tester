@@ -183,10 +183,10 @@ Output : [1, 4, 9, 16, 25]
 # 4.) return sorted array 
 
 
-def sorted_arr(arrrr):
+def sorted_arr(arr):
 
     #1.)
-    for i in range(len(arr)):   
+    for i in range(le(arr)):   
         #2.)
         arr[i] = arr[i] * arr[i]  
         
