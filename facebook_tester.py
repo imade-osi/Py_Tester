@@ -183,7 +183,7 @@ Output : [1, 4, 9, 16, 25]
 # 4.) return sorted array 
 
 
-def sorted_arr(arr):
+def sorted_arr(arrr):
 
     #1.)
     for i in range(len(arr)):   
@@ -222,10 +222,7 @@ def sorted_arr(arr):
     pallet_size += 1
     'GPU' = 2
     'HDD' = 1
-
-    
-      
-           
+       
     window[8] = arr[8]
 
 pallet_size = 5
