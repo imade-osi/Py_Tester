@@ -186,12 +186,12 @@ Output : [1, 4, 9, 16, 25]
 def sorted_arr(arr):
 
     #1.)
-    for i in range(le(arr)):   
+    for i in range(len(arr)):   
         #2.)
         arr[i] = arr[i] * arr[i]  
         
     #3.)
-    arr.sort() 
+    arr.sortt() 
     
     #4.)
     return arr
