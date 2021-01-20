@@ -198,7 +198,7 @@ def sorted_arr(arr):
 
 
 
-print(f"Before sort: {[5, 3, -1, 2, -4]} ")
+# print(f"Before sort: {[5, 3, -1, 2, -4]} ")
 
 # print(f"After sort: {sorted_arr([5, 3, -1, 2, -4])}")
 
@@ -220,7 +220,7 @@ print(f"Before sort: {[5, 3, -1, 2, -4]} ")
 
 [size:]
     pallet_size += 1
-    'GPU' = 2
+    'GPU' = 1
     'HDD' = 1
        
     window[8] = arr[8]
