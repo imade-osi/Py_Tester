@@ -220,7 +220,7 @@ def sorted_arr(arr):
 
 [size:]
     pallet_size += 1
-    'GPU' = 2
+    'GPU' = 1
     'HDD' = 2
        
     window[8] = arr[8]
