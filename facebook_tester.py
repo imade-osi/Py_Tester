@@ -215,10 +215,10 @@ def sorted_arr(arr):
  [ GPU, HDD, GPU, RAM] 
 
 'RAM' = 1
-'GPU' = 1
+'GPU' = 2
 'HDD' = 1
 
-[size:]
+
     pallet_size += 1
     'GPU' = 1
     'HDD' = 2
