@@ -210,7 +210,7 @@ def sorted_arr(arr):
 
 #STAY TUNED NEXT WEEK FOR HASHES!!! {}
 
-["19-0001", HDD, RAM, GPU, HDD, GPU, Chassis]
+["19-0001", HDD, RAM, GPU, HDD, GPU, Chassis, GPU]
                  
  [ GPU, HDD, GPU, RAM] 
 
