@@ -233,7 +233,7 @@ n*k
 
 def partition_count(arr, size):
     window = [ for ele in range(size)] 
-    part_hash = {}
+    part_hash = []
     pallet_rep = 0
     front = 0
     end = size - 1
