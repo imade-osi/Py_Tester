@@ -151,8 +151,8 @@
 # arr = [7,1,2,3,9,4] 
 
 # def maxProfit(arr):
-#     max_prof = 1
-#     temp_max = 0
+#     max_prof = 0
+#     temp_max = 1
 #     lowest_buy = arr[0] 
  
 
