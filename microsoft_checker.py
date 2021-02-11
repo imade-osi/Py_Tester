@@ -153,7 +153,7 @@
 # def maxProfit(arr):
 #     max_prof = 0
 #     temp_max = 0
-#     lowest_buy = arr[0] 
+#     lowest_buy = arr[1] 
  
 
 #     for i in range(1, len(arr)):
